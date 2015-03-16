@@ -14,6 +14,9 @@ class people::jacebrowning {
     ensure => link,
     target => "/Users/${::boxen_user}/.dotfiles"
   }
+  exec { "install dotfiles":
+    command => "/usr/bin/make -C /Users/${::boxen_user}/.dotfiles"
+  }
 
   repository { "/Users/${::boxen_user}/Library/Application Support/Sublime Text 3/Packages/User":
     source => 'jacebrowning/sublime-settings',
