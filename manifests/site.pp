@@ -52,6 +52,7 @@ Service {
 Homebrew::Formula <| |> -> Package <| |>
 
 node default {
+
   # core modules, needed for most things
   include dnsmasq
   include git
@@ -62,20 +63,13 @@ node default {
   if $::root_encrypted == 'no' {
     fail('Please enable full disk encryption and try again')
   }
-
-  # node versions
-  nodejs::version { 'v0.6': }
-  nodejs::version { 'v0.8': }
-  nodejs::version { 'v0.10': }
-
-  # default ruby versions
-  ruby::version { '1.9.3': }
-  ruby::version { '2.0.0': }
-  ruby::version { '2.1.0': }
-  ruby::version { '2.1.1': }
+  # ruby versions
   ruby::version { '2.1.2': }
 
-  # common, useful packages
+  # python versions
+  include $python
+
+  # common useful packages
   package {
     [
       'ack',
@@ -84,8 +78,27 @@ node default {
     ]:
   }
 
-  file { "${boxen::config::srcdir}/our-boxen":
+  # general development tools
+  include iterm2::dev
+  include github_for_mac
+
+  # tools needed edit this project
+  file { "${boxen::config::srcdir}/MyBoxen":
     ensure => link,
     target => $boxen::config::repodir
   }
+  include sublime_text
+  sublime_text::package { 'Package Control':
+    source => 'wbond/sublime_package_control'
+  }
+  sublime_text::package { 'Puppet':
+    source => 'russCloak/SublimePuppet'
+  }
+  sublime_text::package { 'Google Spell Check':
+    source => 'noahcoad/google-spell-check'
+  }
+  sublime_text::package { 'MarkdownEditing':
+    source => 'SublimeText-Markdown/MarkdownEditing'
+  }
+
 }

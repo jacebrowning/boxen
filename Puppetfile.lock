@@ -1,4 +1,14 @@
 GITHUBTARBALL
+  remote: Adonit/puppet-daisy_disk
+  specs:
+    daisy_disk (1.0.2-rc.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-appcleaner
+  specs:
+    appcleaner (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
     boxen (3.10.2)
@@ -29,6 +39,11 @@ GITHUBTARBALL
     git (2.7.5)
 
 GITHUBTARBALL
+  remote: boxen/puppet-github_for_mac
+  specs:
+    github_for_mac (1.0.3)
+
+GITHUBTARBALL
   remote: boxen/puppet-go
   specs:
     go (2.1.0)
@@ -44,6 +59,16 @@ GITHUBTARBALL
     hub (1.4.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-iterm2
+  specs:
+    iterm2 (1.2.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-java
+  specs:
+    java (1.7.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-nginx
   specs:
     nginx (1.4.4)
@@ -54,9 +79,19 @@ GITHUBTARBALL
     nodejs (4.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-oclint
+  specs:
+    oclint (1.1.6)
+
+GITHUBTARBALL
   remote: boxen/puppet-openssl
   specs:
     openssl (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-osx
+  specs:
+    osx (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-phantomjs
@@ -79,14 +114,29 @@ GITHUBTARBALL
     ruby (8.1.7)
 
 GITHUBTARBALL
+  remote: boxen/puppet-sublime_text
+  specs:
+    sublime_text (1.0.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-sudo
   specs:
     sudo (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-xctool
+  specs:
+    xctool (0.0.2)
+
+GITHUBTARBALL
   remote: boxen/puppet-xquartz
   specs:
     xquartz (1.2.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-zsh
+  specs:
+    zsh (1.0.0)
 
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
@@ -103,26 +153,43 @@ GITHUBTARBALL
   specs:
     module_data (0.0.3)
 
+GITHUBTARBALL
+  remote: samjsharpe/puppet-ohmyzsh
+  specs:
+    ohmyzsh (1.0.0)
+
 DEPENDENCIES
+  appcleaner (= 1.0.0)
   boxen (= 3.10.2)
   brewcask (= 0.0.6)
+  daisy_disk (= 1.0.2)
   dnsmasq (= 2.0.1)
   foreman (= 1.2.0)
   gcc (= 2.2.0)
   git (= 2.7.5)
+  github_for_mac (= 1.0.3)
   go (= 2.1.0)
   homebrew (= 1.11.2)
   hub (= 1.4.0)
   inifile (= 1.1.1)
+  iterm2 (= 1.2.0)
+  java (= 1.7.1)
   module_data (= 0.0.3)
   nginx (= 1.4.4)
   nodejs (= 4.0.0)
+  nodejs (= 4.0.0)
+  oclint (= 1.1.6)
+  ohmyzsh (= 1.0.0)
   openssl (= 1.0.0)
+  osx (= 1.0.0)
   phantomjs (= 2.3.0)
   pkgconfig (= 1.0.0)
   repository (= 2.3.0)
   ruby (= 8.1.7)
   stdlib (= 4.2.1)
+  sublime_text (= 1.0.1)
   sudo (= 1.0.0)
+  xctool (= 0.0.2)
   xquartz (= 1.2.1)
+  zsh (= 1.0.0)
 
