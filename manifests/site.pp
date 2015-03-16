@@ -63,11 +63,10 @@ node default {
   if $::root_encrypted == 'no' {
     fail('Please enable full disk encryption and try again')
   }
-  # ruby versions
+  # programming lanuages
   ruby::version { '2.1.2': }
-
-  # python versions
   include $python
+  include $java
 
   # common useful packages
   package {
