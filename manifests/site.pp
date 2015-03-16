@@ -86,18 +86,5 @@ node default {
     ensure => link,
     target => $boxen::config::repodir
   }
-  include sublime_text
-  sublime_text::package { 'Package Control':
-    source => 'wbond/sublime_package_control'
-  }
-  sublime_text::package { 'Puppet':
-    source => 'russCloak/SublimePuppet'
-  }
-  sublime_text::package { 'Google Spell Check':
-    source => 'noahcoad/google-spell-check'
-  }
-  sublime_text::package { 'MarkdownEditing':
-    source => 'SublimeText-Markdown/MarkdownEditing'
-  }
 
 }
