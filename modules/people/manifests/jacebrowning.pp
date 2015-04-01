@@ -3,6 +3,8 @@ class people::jacebrowning {
   include zsh
   include ohmyzsh
 
+  include p4merge
+
   include daisy_disk
   include appcleaner
 
