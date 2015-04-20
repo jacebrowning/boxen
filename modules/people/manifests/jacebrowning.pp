@@ -7,6 +7,7 @@ class people::jacebrowning {
 
   include daisy_disk
   include appcleaner
+  include spectacle
 
   repository { "/Users/${::boxen_user}/.dotfiles":
       source => 'jacebrowning/dotfiles',
