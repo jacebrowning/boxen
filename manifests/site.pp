@@ -65,9 +65,11 @@ node default {
   }
 
   # programming languages
-  ruby::version { '2.1.2': }
   include $python
   include $java
+  ruby::version { '2.1.2': }
+  nodejs::version { 'v0.12': }
+  class { 'nodejs::global': version => 'v0.12' }
 
   # common useful packages
   package {
