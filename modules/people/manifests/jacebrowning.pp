@@ -3,6 +3,10 @@ class people::jacebrowning {
   include zsh
   include ohmyzsh
 
+  include iterm2::dev
+
+  include github_for_mac
+  include sublime_text
   include p4merge
 
   include daisy_disk

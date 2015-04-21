@@ -63,7 +63,8 @@ node default {
   if $::root_encrypted == 'no' {
     fail('Please enable full disk encryption and try again')
   }
-  # programming lanuages
+
+  # programming languages
   ruby::version { '2.1.2': }
   include $python
   include $java
@@ -76,10 +77,6 @@ node default {
       'gnu-tar'
     ]:
   }
-
-  # general development tools
-  include iterm2::dev
-  include github_for_mac
 
   # tools needed edit this project
   file { "${boxen::config::srcdir}/MyBoxen":
