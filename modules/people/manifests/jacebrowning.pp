@@ -6,6 +6,7 @@ class people::jacebrowning {
   include iterm2::dev
 
   include github_for_mac
+  include sourcetree
   include sublime_text
   include p4merge
 

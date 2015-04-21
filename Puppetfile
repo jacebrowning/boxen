@@ -68,6 +68,7 @@ github "sublime_text",    "1.0.1"
 github "daisy_disk",      "1.0.2", :repo => "Adonit/puppet-daisy_disk"
 github "p4merge",         "0.0.3", :repo => "steinim/puppet-p4merge"
 github "spectacle",       "1.0.0"
+github "sourcetree",      "1.0.0"
 
 github "java",      "1.7.1"
 github "xctool",    "0.0.2"
