@@ -13,7 +13,7 @@ exec { "install common python2 libraries":
   require => Package['python'],
 }
 exec { "install common python3 libraries":
-  command => "python3 -m ensurepip; python3 -m pip install --upgrade $python_libs doorstop gdm",
+  command => "python3 -m ensurepip; python3 -m pip install --upgrade $python_libs doorstop gdm mine",
   require => Package['python3'],
 }
 
