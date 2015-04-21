@@ -68,8 +68,10 @@ node default {
   include $python
   include $java
   ruby::version { '2.1.2': }
+  class { 'ruby::global': version => '2.1.2' }
   nodejs::version { 'v0.12': }
   class { 'nodejs::global': version => 'v0.12' }
+  include $ios
 
   # common useful packages
   package {
