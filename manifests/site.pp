@@ -71,6 +71,7 @@ node default {
   class { 'ruby::global': version => '2.1.2' }
   nodejs::version { 'v0.12': }
   class { 'nodejs::global': version => 'v0.12' }
+  nodejs::module { 'bower': node_version => 'v0.12' }
   include $ios
 
   # common useful packages
