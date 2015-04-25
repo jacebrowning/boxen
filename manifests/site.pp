@@ -76,7 +76,7 @@ node default {
   include $ios
 
   # web browsers
-  package { 'chrome': provider => 'brewcask' }
+  package { 'google-chrome': provider => 'brewcask' }
   package { 'firefox': provider => 'brewcask' }
 
   # common useful packages
