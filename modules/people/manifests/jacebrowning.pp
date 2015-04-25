@@ -7,8 +7,10 @@ class people::jacebrowning {
 
   include github_for_mac
   include sourcetree
-  include sublime_text
   include p4merge
+
+  include sublime_text
+  include dia
 
   include daisy_disk
   include appcleaner
