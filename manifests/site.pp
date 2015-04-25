@@ -58,6 +58,7 @@ node default {
   include git
   include hub
   include nginx
+  include brewcask
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
@@ -73,6 +74,10 @@ node default {
   class { 'nodejs::global': version => 'v0.12' }
   nodejs::module { 'bower': node_version => 'v0.12' }
   include $ios
+
+  # web browsers
+  package { 'chrome': provider => 'brewcask' }
+  package { 'firefox': provider => 'brewcask' }
 
   # common useful packages
   package {

@@ -15,6 +15,7 @@ class people::jacebrowning {
   include daisy_disk
   include appcleaner
   include spectacle
+  package { 'skype': provider => 'brewcask' }
 
   repository { "/Users/${::boxen_user}/.dotfiles":
       source => 'jacebrowning/dotfiles',
