@@ -16,6 +16,7 @@ class people::jacebrowning {
   include appcleaner
   include spectacle
   package { 'skype': provider => 'brewcask' }
+  package { 'macpilot': provider => 'brewcask' }
 
   repository { "/Users/${::boxen_user}/.dotfiles":
       source => 'jacebrowning/dotfiles',
