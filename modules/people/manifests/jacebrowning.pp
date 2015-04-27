@@ -11,6 +11,7 @@ class people::jacebrowning {
 
   include sublime_text
   include dia
+  package { 'cronnix': provider => 'brewcask' }
 
   include daisy_disk
   include appcleaner
