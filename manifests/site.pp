@@ -59,11 +59,16 @@ node default {
   include hub
   include nginx
   include brewcask
-  include sysctl
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
     fail('Please enable full disk encryption and try again')
+  }
+
+  # databases
+  package {'postgresql':
+    ensure => installed,
+    provider => 'homebrew',
   }
 
   # programming languages
@@ -75,7 +80,6 @@ node default {
   class { 'nodejs::global': version => 'v0.12' }
   nodejs::module { 'bower': node_version => 'v0.12' }
   include $ios
-  include postgresql
 
   # web browsers
   package { 'google-chrome': provider => 'brewcask' }
