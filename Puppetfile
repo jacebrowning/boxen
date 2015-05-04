@@ -65,6 +65,8 @@ github "osx",         "1.0.0"
 
 github "java",        "1.7.1"
 github "nodejs",      "4.0.1"
+github "virtualbox",  "1.0.13"
+github "vagrant",     "3.3.0"
 
 github "zsh",         "1.0.0"
 github "ohmyzsh",     "1.0.0", :repo => "samjsharpe/puppet-ohmyzsh"

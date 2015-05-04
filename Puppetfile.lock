@@ -139,6 +139,16 @@ GITHUBTARBALL
     sysctl (1.0.1)
 
 GITHUBTARBALL
+  remote: boxen/puppet-vagrant
+  specs:
+    vagrant (3.3.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-virtualbox
+  specs:
+    virtualbox (1.0.13)
+
+GITHUBTARBALL
   remote: boxen/puppet-xctool
   specs:
     xctool (0.0.2)
@@ -218,6 +228,8 @@ DEPENDENCIES
   sublime_text (= 1.0.1)
   sudo (= 1.0.0)
   sysctl (= 1.0.1)
+  vagrant (= 3.3.0)
+  virtualbox (= 1.0.13)
   xctool (= 0.0.2)
   xquartz (= 1.2.1)
   zsh (= 1.0.0)

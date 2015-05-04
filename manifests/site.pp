@@ -101,4 +101,8 @@ node default {
     target => $boxen::config::repodir
   }
 
+  # virtual machines
+  include virtualbox
+  class { 'vagrant': completion => true }
+
 }
