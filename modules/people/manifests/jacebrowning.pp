@@ -5,7 +5,8 @@ class people::jacebrowning {
   include ohmyzsh
   repository { "/Users/${::boxen_user}/.dotfiles":
       source => 'jacebrowning/dotfiles',
-      provider => git
+      provider => git,
+      ensure   => 'origin/HEAD',
   }
   file { "${boxen::config::srcdir}/dotfiles":
     ensure => link,
@@ -30,7 +31,8 @@ class people::jacebrowning {
   include sublime_text
   repository { "/Users/${::boxen_user}/Library/Application Support/Sublime Text 3/Packages/User":
     source => 'jacebrowning/sublime-settings',
-    provider => git
+    provider => git,
+    ensure   => 'origin/HEAD',
   }
   file { "${boxen::config::srcdir}/sublime-settings":
     ensure => link,
