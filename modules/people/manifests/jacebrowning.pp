@@ -8,11 +8,13 @@ class people::jacebrowning {
       provider => git,
       ensure   => 'origin/HEAD',
   }
-  file { "${boxen::config::srcdir}/dotfiles":
+  $dotfiles =  "${boxen::config::srcdir}/dotfiles"
+  file { $dotfiles:
     ensure => link,
     target => "/Users/${::boxen_user}/.dotfiles"
   }
   exec { "install dotfiles":
+    require => File[$dotfiles],
     command => "/usr/bin/make -C /Users/${::boxen_user}/.dotfiles"
   }
 
