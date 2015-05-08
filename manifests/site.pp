@@ -101,8 +101,9 @@ node default {
     target => $boxen::config::repodir
   }
 
-  # virtual machines
+  # provisioning and deployment
   include virtualbox
   class { 'vagrant': completion => true }
+  include heroku
 
 }
