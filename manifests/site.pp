@@ -66,10 +66,7 @@ node default {
   }
 
   # databases
-  package {'postgresql':
-    ensure => installed,
-    provider => 'homebrew',
-  }
+  include postgresql
 
   # programming languages
   include $python

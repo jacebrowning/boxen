@@ -68,6 +68,7 @@ github "nodejs",      "4.0.1"
 github "virtualbox",  "1.0.13"
 github "vagrant",     "3.3.0"
 github "heroku",      "2.0.0"
+github "postgresql",  "4.0.1"
 
 github "zsh",         "1.0.0"
 github "ohmyzsh",     "1.0.0", :repo => "samjsharpe/puppet-ohmyzsh"
