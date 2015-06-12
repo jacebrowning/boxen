@@ -47,5 +47,6 @@ class people::jacebrowning {
   include spectacle
   package { 'skype': provider => 'brewcask' }
   package { 'macpilot': provider => 'brewcask' }
+  package { 'caffeine': provider => 'brewcask' }
 
 }
