@@ -7,7 +7,7 @@ package { 'python3':
   ensure => installed,
   provider => homebrew,
 }
-$python_libs = "virtualenv pep8 pep8radius pep257 pylint nose pytest coverage"
+$python_libs = "pip virtualenv pep8 pep8radius pep257 pylint nose pytest coverage"
 exec { "install common python2 libraries":
   command => "python2 -m ensurepip; python2 -m pip install --upgrade $python_libs ansible",
   require => Package['python'],
