@@ -43,13 +43,35 @@ python::package { "virtualenv for $python3":
   version => '>= 13.1',
 }
 
-# Install common tools for Python 2
+# Install development tools for Python 3
+python::package { "pep8 for $python3":
+  package => 'pep8',
+  python  => $python3,
+  version => '>= 1.6',
+}
+python::package { "autopep8 for $python3":
+  package => 'autopep8',
+  python  => $python3,
+  version => '>= 1.2',
+}
+python::package { "pep257 for $python3":
+  package => 'pep257',
+  python  => $python3,
+  version => '>= 0.6',
+}
+python::package { "pylint for $python3":
+  package => 'pylint',
+  python  => $python3,
+  version => '>= 1.4',
+}
+
+# Install tools written in Python 2
 python::package { "ansible for $python2":
   package => 'ansible',
   python  => $python2,
 }
 
-# Install common tools for Python 3
+# Install tools written in Python 3
 python::package { "doorstop for $python3":
   package => 'doorstop',
   python  => $python3,
