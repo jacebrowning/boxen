@@ -69,15 +69,11 @@ node default {
   include postgresql
 
   # programming languages
-  include $python
-  include $java
-  ruby::version { '2.1.2': }
-  class { 'ruby::global': version => '2.1.2' }
-  nodejs::version { 'v0.12': }
-  class { 'nodejs::global': version => 'v0.12' }
-  nodejs::module { 'bower': node_version => 'v0.12' }
-  nodejs::module { 'ember-cli': node_version => 'v0.12' }
   include $ios
+  include $java
+  include $node
+  include $python
+  include $ruby
 
   # web browsers
   package { 'google-chrome': provider => 'brewcask' }
