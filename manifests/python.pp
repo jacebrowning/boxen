@@ -9,6 +9,63 @@ class { 'python::global':
   version => "$python3"
 }
 
+# Install core libraries for Python 2
+python::package { "setuptools for $python2":
+  package => 'setuptools',
+  python  => $python2,
+  version => '>= 2.1',
+}
+python::package { "pip for $python2":
+  package => 'pip',
+  python  => $python2,
+  version => '>= 7.1',
+}
+python::package { "virtualenv for $python2":
+  package => 'virtualenv',
+  python  => $python2,
+  version => '>= 13.1',
+}
+
+# Install core libraries for Python 3
+python::package { "setuptools for $python3":
+  package => 'setuptools',
+  python  => $python3,
+  version => '>= 2.1',
+}
+python::package { "pip for $python3":
+  package => 'pip',
+  python  => $python3,
+  version => '>= 7.1',
+}
+python::package { "virtualenv for $python3":
+  package => 'virtualenv',
+  python  => $python3,
+  version => '>= 13.1',
+}
+
+# Install common tools for Python 2
+python::package { "ansible for $python2":
+  package => 'ansible',
+  python  => $python2,
+}
+
+# Install common tools for Python 3
+python::package { "doorstop for $python3":
+  package => 'doorstop',
+  python  => $python3,
+  version => '>= 0.8',
+}
+python::package { "gdm for $python3":
+  package => 'gdm',
+  python  => $python3,
+  version => '>= 0.3',
+}
+python::package { "mine for $python3":
+  package => 'mine',
+  python  => $python3,
+  version => '>= 0.2',
+}
+
 # Install documentation tools
 package { 'pandoc':
   ensure => installed,
