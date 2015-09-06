@@ -42,6 +42,11 @@ python::package { "virtualenv for $python3":
   python  => $python3,
   version => '>= 13.1',
 }
+python::package { "cookiecutter for $python3":
+  package => 'cookiecutter',
+  python  => $python3,
+  version => '>= 1, < 2',
+}
 
 # Install development tools for Python 3
 python::package { "pep8 for $python3":
