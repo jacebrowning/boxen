@@ -97,7 +97,7 @@ python::package { "gdm for $python3":
 python::package { "mine for $python3":
   package => 'mine',
   python  => $python3,
-  version => '>= 0.2',
+  version => '>= 0.2.1',
 }
 
 # Install documentation tools
