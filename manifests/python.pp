@@ -42,9 +42,11 @@ python::package { "virtualenv for $python3":
   python  => $python3,
   version => '>= 13.1',
 }
-python::package { "cookiecutter for $python3":
+
+# Install development tools for Python 2
+python::package { "cookiecutter for $python2":
   package => 'cookiecutter',
-  python  => $python3,
+  python  => $python2,
   version => '>= 1, < 2',
 }
 
@@ -68,6 +70,11 @@ python::package { "pylint for $python3":
   package => 'pylint',
   python  => $python3,
   version => '>= 1.4',
+}
+python::package { "cookiecutter for $python3":
+  package => 'cookiecutter',
+  python  => $python3,
+  version => '>= 1, < 2',
 }
 
 # Install tools written in Python 2
