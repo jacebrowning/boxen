@@ -1,7 +1,10 @@
 # Install Python versions
-$python2 = '2.7.8'
-$python3 = '3.4.2'
+$python2 = '2.7.10'
+$python3 = '3.5.0'
+python::version { '2.6.9': }
 python::version { "$python2": }
+python::version { '3.3.6': }
+python::version { '3.4.3': }
 python::version { "$python3": }
 
 # Set the global version of Python
@@ -18,7 +21,7 @@ python::package { "setuptools for $python2":
 python::package { "pip for $python2":
   package => 'pip',
   python  => $python2,
-  version => '>= 7.1',
+  version => '>= 7.1.2',
 }
 python::package { "virtualenv for $python2":
   package => 'virtualenv',
@@ -35,7 +38,7 @@ python::package { "setuptools for $python3":
 python::package { "pip for $python3":
   package => 'pip',
   python  => $python3,
-  version => '>= 7.1',
+  version => '>= 7.1.2',
 }
 python::package { "virtualenv for $python3":
   package => 'virtualenv',

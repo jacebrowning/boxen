@@ -69,7 +69,12 @@ github "virtualbox",  "1.0.13"
 github "vagrant",     "3.3.0"
 github "heroku",      "2.0.0"
 github "postgresql",  "4.0.1"
-github "python",      "3.0.0", :repo => "mloberg/puppet-python"
+
+# TODO: replace this after: https://github.com/mloberg/puppet-python/pull/22
+# github "python",      "3.0.0", :repo => "mloberg/puppet-python"
+mod 'puppet-python',
+  :git => 'https://github.com/jacebrowning/puppet-python',
+  :ref => '3.0.0-post.1'
 
 github "zsh",         "1.0.0"
 github "ohmyzsh",     "1.0.0", :repo => "samjsharpe/puppet-ohmyzsh"
