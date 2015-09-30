@@ -98,7 +98,7 @@ python::package { "doorstop for $python3":
 python::package { "gdm for $python3":
   package => 'gdm',
   python  => $python3,
-  version => '>= 0.5.dev1',
+  version => '>= 0.5.dev2',
 }
 python::package { "mine for $python3":
   package => 'mine',
