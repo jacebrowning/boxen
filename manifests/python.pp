@@ -105,6 +105,11 @@ python::package { "mine for $python3":
   python  => $python3,
   version => '>= 0.3.dev1',
 }
+python::package { "curmit for $python3":
+  package => 'curmit',
+  python  => $python3,
+  version => '>= 0.1.2',
+}
 
 # Install documentation tools
 package { 'pandoc':
