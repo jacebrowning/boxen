@@ -98,12 +98,12 @@ python::package { "doorstop for $python3":
 python::package { "gdm for $python3":
   package => 'gdm',
   python  => $python3,
-  version => '>= 0.3',
+  version => '>= 0.5.dev1',
 }
 python::package { "mine for $python3":
   package => 'mine',
   python  => $python3,
-  version => '>= 0.2.1',
+  version => '>= 0.3.dev1',
 }
 
 # Install documentation tools
