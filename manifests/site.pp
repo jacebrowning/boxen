@@ -85,7 +85,9 @@ node default {
     [
       'ack',
       'findutils',
-      'gnu-tar'
+      'gnu-tar',
+      'dos2unix',
+      'unix2dos',
     ]:
   }
 
