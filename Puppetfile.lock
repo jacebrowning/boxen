@@ -208,6 +208,11 @@ GITHUBTARBALL
   specs:
     p4merge (0.0.3)
 
+GITHUBTARBALL
+  remote: thejchap/puppet-mercurial
+  specs:
+    mercurial (1.0.0)
+
 DEPENDENCIES
   appcleaner (= 1.0.0)
   boxen (= 3.10.2)
@@ -226,6 +231,7 @@ DEPENDENCIES
   inifile (= 1.1.1)
   iterm2 (= 1.2.0)
   java (= 1.7.1)
+  mercurial (= 1.0.0)
   module_data (= 0.0.3)
   nginx (= 1.4.4)
   nodejs (= 4.0.1)
