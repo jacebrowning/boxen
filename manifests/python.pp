@@ -108,7 +108,7 @@ python::package { "mine for $python3":
 python::package { "curmit for $python3":
   package => 'curmit',
   python  => $python3,
-  version => '>= 0.1.2',
+  version => '>= 1.0',
 }
 
 # Install documentation tools
