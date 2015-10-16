@@ -1,4 +1,4 @@
-# My Boxen
+# Boxen
 
 ## Installation
 
