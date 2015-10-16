@@ -79,6 +79,10 @@ node default {
   # web browsers
   package { 'google-chrome': provider => 'brewcask' }
   package { 'firefox': provider => 'brewcask' }
+  file { "/Applications/Firefox.app":
+    ensure => link,
+    target => "/Users/${::boxen_user}/Applications/Firefox.app",
+  }
 
   # common useful packages
   package {
