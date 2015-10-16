@@ -5,7 +5,7 @@ class people::jacebrowning {
   include sublime_text
 
   # projects
-  repository { "/Users/${::boxen_user}/Programs/modustri-api":
+  repository { "${boxen::config::srcdir}/modustri-api":
     source => 'modustri/api',
     provider => git,
     ensure   => 'origin/HEAD',

@@ -92,7 +92,7 @@ node default {
   }
 
   # tools needed edit this project
-  file { "${boxen::config::srcdir}/MyBoxen":
+  file { "${boxen::config::srcdir}/Boxen":
     ensure => link,
     target => $boxen::config::repodir
   }
