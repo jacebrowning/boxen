@@ -6,7 +6,7 @@ Clone this project:
 
     $ sudo mkdir -p /opt/boxen
     $ sudo chown ${USER}:staff /opt/boxen
-    $ git clone https://github.com/jacebrowning/my-boxen /opt/boxen/repo
+    $ git clone https://github.com/modustri/boxen /opt/boxen/repo
 
 Run boxen:
 
