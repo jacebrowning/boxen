@@ -1,4 +1,4 @@
-class people::jacebrowning {
+class people::modustri_ci {
 
   # tools
   include iterm2::dev
