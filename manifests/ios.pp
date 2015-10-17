@@ -5,7 +5,9 @@ ruby_gem { 'cocoapods for all rubies':
 }
 
 # test tools
-include xctool
+class { 'xctool':
+  version => 'HEAD',
+}
 
 # analysis tools
 include oclint
