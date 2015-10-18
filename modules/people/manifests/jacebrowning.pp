@@ -48,5 +48,6 @@ class people::jacebrowning {
   package { 'skype': provider => 'brewcask' }
   package { 'macpilot': provider => 'brewcask' }
   package { 'caffeine': provider => 'brewcask' }
+  package { 'gitter': provider => 'brewcask'}
 
 }
