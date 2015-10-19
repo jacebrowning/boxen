@@ -90,30 +90,10 @@ python::package { "ansible for $python2":
 }
 
 # Install tools written in Python 3
-python::package { "doorstop for $python3":
-  package => 'doorstop',
-  python  => $python3,
-  version => '>= 0.8',
-}
 python::package { "gdm for $python3":
   package => 'gdm',
   python  => $python3,
   version => '>= 0.5.dev3',
-}
-python::package { "mine for $python3":
-  package => 'mine',
-  python  => $python3,
-  version => '>= 0.3.dev1',
-}
-python::package { "curmit for $python3":
-  package => 'curmit',
-  python  => $python3,
-  version => '>= 1.0',
-}
-python::package { "thefuck for $python3":
-  package => 'thefuck',
-  python  => $python3,
-  version => '>= 3.1',
 }
 
 # Install documentation tools

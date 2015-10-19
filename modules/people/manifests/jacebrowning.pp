@@ -50,4 +50,30 @@ class people::jacebrowning {
   package { 'caffeine': provider => 'brewcask' }
   package { 'gitter': provider => 'brewcask'}
 
+  # Install tools written in Python 2
+  $python2 = '2.7.10'
+
+  # Install tools written in Python 3
+  $python3 = '3.5.0'
+  python::package { "doorstop for $python3":
+    package => 'doorstop',
+    python  => $python3,
+    version => '>= 0.8',
+  }
+  python::package { "mine for $python3":
+    package => 'mine',
+    python  => $python3,
+    version => '>= 0.3.dev2',
+  }
+  python::package { "curmit for $python3":
+    package => 'curmit',
+    python  => $python3,
+    version => '>= 1.0',
+  }
+  python::package { "thefuck for $python3":
+    package => 'thefuck',
+    python  => $python3,
+    version => '>= 3.1',
+  }
+
 }
