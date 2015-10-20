@@ -100,13 +100,3 @@ python::package { "httpie for $python3":
   python  => $python3,
   version => '== 0.9.2',
 }
-
-# Install documentation tools
-package { 'pandoc':
-  ensure => installed,
-  provider => homebrew,
-}
-package { 'graphviz':
-  ensure => installed,
-  provider => homebrew,
-}
