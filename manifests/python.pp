@@ -93,7 +93,7 @@ python::package { "ansible for $python2":
 python::package { "gdm for $python3":
   package => 'gdm',
   python  => $python3,
-  version => '>= 0.5.dev3',
+  version => '>= 0.5',
 }
 
 # Install documentation tools
