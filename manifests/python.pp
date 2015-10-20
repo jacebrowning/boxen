@@ -95,6 +95,11 @@ python::package { "gdm for $python3":
   python  => $python3,
   version => '>= 0.5',
 }
+python::package { "httpie for $python3":
+  package => 'httpie',
+  python  => $python3,
+  version => '== 0.9.2',
+}
 
 # Install documentation tools
 package { 'pandoc':
