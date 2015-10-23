@@ -1,18 +1,18 @@
 # Install Python versions
 $python2 = '2.7.10'
-$python3 = '3.5.0'
+$python3 = '3.4.3'
 python::version { '2.6.9': }
 python::version { "$python2": }
 python::version { '3.3.6': }
-python::version { '3.4.3': }
 python::version { "$python3": }
+python::version { '3.5.0': }
 
 # Set the global versions of Python
 file { "version":
     path    => "${boxen::config::home}/pyenv/version",
     ensure  => present,
     replace => true,
-    content => "$python3\n3.4.3\n$python2\n";
+    content => "$python3\n\n$python2\n\n3.5.0\n3.3.6\n2.6.9\n";
 }
 
 # Install core libraries for Python 2
@@ -93,15 +93,10 @@ python::package { "ansible for $python2":
 python::package { "gdm for $python3":
   package => 'gdm',
   python  => $python3,
-  version => '>= 0.5.dev3',
+  version => '>= 0.5',
 }
-
-# Install documentation tools
-package { 'pandoc':
-  ensure => installed,
-  provider => homebrew,
-}
-package { 'graphviz':
-  ensure => installed,
-  provider => homebrew,
+python::package { "httpie for $python3":
+  package => 'httpie',
+  python  => $python3,
+  version => '== 0.9.2',
 }

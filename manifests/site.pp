@@ -92,6 +92,7 @@ node default {
       'gnu-tar',
       'dos2unix',
       'unix2dos',
+      'graphviz',
     ]:
   }
 

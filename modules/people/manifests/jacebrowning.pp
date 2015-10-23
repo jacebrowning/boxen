@@ -40,6 +40,10 @@ class people::jacebrowning {
     ensure => link,
     target => "/Users/${::boxen_user}/Library/Application Support/Sublime Text 3/Packages/User"
   }
+  package { 'pandoc':
+    ensure => installed,
+    provider => homebrew,
+  }
 
   # applications
   include daisy_disk
@@ -50,10 +54,10 @@ class people::jacebrowning {
   package { 'caffeine': provider => 'brewcask' }
   package { 'gitter': provider => 'brewcask'}
 
-  # Install tools written in Python 2
+  # tools written in Python 2
   $python2 = '2.7.10'
 
-  # Install tools written in Python 3
+  # tools written in Python 3
   $python3 = '3.5.0'
   python::package { "doorstop for $python3":
     package => 'doorstop',
