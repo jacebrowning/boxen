@@ -2,6 +2,8 @@
 
 ## Installation
 
+Uninstall your current Homebrew setup: https://gist.github.com/mxcl/1173223
+
 Clone this project:
 
     $ sudo mkdir -p /opt/boxen
