@@ -6,7 +6,7 @@ ruby_gem { 'cocoapods for all rubies':
 
 # test tools
 class { 'xctool':
-  version => '0.2.6',
+  version => '0.2.7',
 }
 
 # analysis tools
