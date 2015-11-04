@@ -83,6 +83,7 @@ github "p4merge",         "0.0.3", :repo => "steinim/puppet-p4merge"
 
 github "sublime_text", "1.0.1"
 github "dia",          "0.0.2"
+github "atom",         "1.3.0"
 
 github "xctool",      "0.0.2"
 github "oclint",      "1.1.6"

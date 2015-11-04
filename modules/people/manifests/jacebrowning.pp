@@ -44,6 +44,7 @@ class people::jacebrowning {
     ensure => installed,
     provider => homebrew,
   }
+  include atom
 
   # applications
   include daisy_disk
