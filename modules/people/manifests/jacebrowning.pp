@@ -45,6 +45,11 @@ class people::jacebrowning {
     provider => homebrew,
   }
   include atom
+  repository { "/Users/${::boxen_user}/.atom":
+    source => 'jacebrowning/atom-config',
+    provider => git,
+    ensure   => 'origin/HEAD',
+  }
 
   # applications
   include daisy_disk
