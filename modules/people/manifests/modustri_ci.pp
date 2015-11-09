@@ -1,11 +1,11 @@
 class people::modustri_ci {
 
-  # applications
+  # Applications
   include iterm2::dev
   include sublime_text
   package { 'caffeine': provider => 'brewcask' }
 
-  # projects
+  # Projects
   repository { "${boxen::config::srcdir}/modustri-api":
     source => 'modustri/api',
     provider => git,
@@ -25,6 +25,12 @@ class people::modustri_ci {
     source => 'modustri/uc',
     provider => git,
     ensure   => 'origin/HEAD',
+  }
+
+  # TeamCity
+  file { "/Users/${::boxen_user}/Library/LaunchAgents/jetbrains.teamcity.BuildAgent.plist":
+    ensure => present,
+    source => "${boxen::config::srcdir}/TeamCity/buildAgent/bin/jetbrains.teamcity.BuildAgent.plist"
   }
 
 }
