@@ -50,6 +50,10 @@ class people::jacebrowning {
     provider => git,
     ensure   => 'origin/HEAD',
   }
+  file { "${boxen::config::srcdir}/atom-config":
+    ensure => link,
+    target => "/Users/${::boxen_user}/.atom",
+  }
 
   # applications
   include daisy_disk
