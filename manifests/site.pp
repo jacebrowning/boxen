@@ -93,6 +93,7 @@ node default {
       'dos2unix',
       'unix2dos',
       'graphviz',
+      'forego',
     ]:
   }
 
