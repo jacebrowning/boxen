@@ -3,7 +3,6 @@ class people::modustri_ci {
   # Applications
   include iterm2::dev
   include sublime_text
-  package { 'caffeine': provider => 'brewcask' }
 
   # Projects
   repository { "${boxen::config::srcdir}/modustri-api":

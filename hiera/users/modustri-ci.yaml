@@ -1,0 +1,5 @@
+boxen::personal::homebrew_packages:
+  - ngrok
+
+boxen::personal::osx_apps:
+  - caffeine
