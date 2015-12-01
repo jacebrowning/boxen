@@ -30,12 +30,6 @@ class people::jacebrowning {
   # development
   include dia
   package { 'cronnix': provider => 'brewcask' }
-  include sublime_text
-  repository { "/Users/${::boxen_user}/Library/Application Support/Sublime Text 3/Packages/User":
-    source => 'jacebrowning/sublime-settings',
-    provider => git,
-    ensure   => 'origin/HEAD',
-  }
   file { "${boxen::config::srcdir}/sublime-settings":
     ensure => link,
     target => "/Users/${::boxen_user}/Library/Application Support/Sublime Text 3/Packages/User"
