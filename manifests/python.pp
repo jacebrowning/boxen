@@ -100,3 +100,8 @@ python::package { "httpie for $python3":
   python  => $python3,
   version => '== 0.9.2',
 }
+python::package { "honcho for $python3":
+  package => 'honcho',
+  python  => $python3,
+  version => '== 0.6.6',
+}
