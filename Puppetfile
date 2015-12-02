@@ -70,7 +70,7 @@ github "vagrant",     "3.3.0"
 github "heroku",      "2.0.0"
 github "postgresql",  "4.0.1"
 github "python",      "3.0.2", :repo => "mloberg/puppet-python"
-github "mercurial",   "1.0.0", :repo => "thejchap/puppet-mercurial"
+github "mercurial",   "0.0.1", :repo => "bluesalt/puppet-mercurial"
 
 github "zsh",         "1.0.0"
 github "ohmyzsh",     "1.0.0", :repo => "samjsharpe/puppet-ohmyzsh"
