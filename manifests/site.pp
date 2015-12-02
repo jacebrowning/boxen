@@ -104,8 +104,6 @@ node default {
   }
 
   # provisioning and deployment
-  include virtualbox
-  class { 'vagrant': completion => true }
   include heroku
 
 }
