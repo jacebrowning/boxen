@@ -4,11 +4,6 @@ GITHUBTARBALL
     daisy_disk (1.0.2-rc.1)
 
 GITHUBTARBALL
-  remote: bluesalt/puppet-mercurial
-  specs:
-    mercurial (0.0.1)
-
-GITHUBTARBALL
   remote: boxen/puppet-appcleaner
   specs:
     appcleaner (1.0.0)
@@ -237,7 +232,6 @@ DEPENDENCIES
   inifile (= 1.1.1)
   iterm2 (= 1.2.0)
   java (= 1.8.4)
-  mercurial (= 0.0.1)
   module_data (= 0.0.3)
   nginx (= 1.4.4)
   nodejs (= 4.0.1)
