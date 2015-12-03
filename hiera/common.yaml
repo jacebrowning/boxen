@@ -5,5 +5,7 @@ boxen::personal::homebrew_packages:
   - forego
   - gnu-tar
   - graphviz
+  - groovy
+  - lcov
   - mercurial
   - unix2dos
