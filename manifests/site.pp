@@ -83,19 +83,6 @@ node default {
     target => "/Users/${::boxen_user}/Applications/Firefox.app",
   }
 
-  # common useful packages
-  package {
-    [
-      'ack',
-      'findutils',
-      'gnu-tar',
-      'dos2unix',
-      'unix2dos',
-      'graphviz',
-      'forego',
-    ]:
-  }
-
   # tools needed edit this project
   file { "${boxen::config::srcdir}/Boxen":
     ensure => link,
