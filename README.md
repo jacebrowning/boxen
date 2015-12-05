@@ -61,6 +61,10 @@ Run boxen:
 Add the following line to the end of your shell run configuation (`.zshrc`, `.bashrc`, `.profile`, etc.):
 
     source /opt/boxen/env.sh
+    if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+    RBENV_ROOT=/opt/boxen/rbenv
+    if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+    PYENV_ROOT=/opt/boxen/pyenv
 
 Open a new terminal window and verify the `$ boxen` command is available. Boxen is now installed.
 
