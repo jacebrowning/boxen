@@ -46,6 +46,7 @@ Deployment tooling:
 ## Installation
 
 Uninstall your current Homebrew setup: https://gist.github.com/mxcl/1173223
+Delete leftover links to Homebrew installs in `/usr/local/bin`.
 
 Clone this project:
 
