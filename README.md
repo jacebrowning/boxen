@@ -21,6 +21,7 @@ iOS development:
   * Install command-line tools: `$ xcode-select --install`
 * [xctool](https://github.com/facebook/xctool): `$ brew install xctool`
 * [LCOV](http://ltp.sourceforge.net/coverage/lcov.php): `$ brew install lcov`
+* [Groovy](http://www.groovy-lang.org): `$ brew install groovy`
 
 Dependency management:
 
@@ -37,7 +38,6 @@ Documentation tooling:
 
 * [Graphviz](http://www.graphviz.org/Download.php): `$ brew install graphviz`
 * [Java](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)
-* [Groovy](http://www.groovy-lang.org): `$ brew install groovy`
 
 Deployment tooling:
 
