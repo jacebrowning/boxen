@@ -8,3 +8,8 @@ ruby_gem { 'bundler for all rubies':
   version      => '~> 1.0',
   ruby_version => '*',
 }
+
+ruby_gem { 'terminal-notifier for current ruby':
+  gem          => 'terminal-notifier',
+  ruby_version => $version,
+}
