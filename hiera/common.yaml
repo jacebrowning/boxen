@@ -1,11 +1,11 @@
 boxen::personal::homebrew_packages:
   - ack
-  - dos2unix
   - findutils
-  - forego
   - gnu-tar
+  - mercurial
+  - dos2unix
+  - unix2dos
+  - forego
   - graphviz
   - groovy
   - lcov
-  - mercurial
-  - unix2dos
