@@ -19,7 +19,7 @@ file { "version":
 python::package { "setuptools for $python2":
   package => 'setuptools',
   python  => $python2,
-  version => '== 2.1',
+  version => '== 19.1.1',
 }
 python::package { "pip for $python2":
   package => 'pip',
@@ -36,7 +36,7 @@ python::package { "virtualenv for $python2":
 python::package { "setuptools for $python3":
   package => 'setuptools',
   python  => $python3,
-  version => '== 2.1',
+  version => '== 19.1.1',
 }
 python::package { "pip for $python3":
   package => 'pip',
