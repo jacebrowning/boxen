@@ -19,68 +19,68 @@ file { "version":
 python::package { "setuptools for $python2":
   package => 'setuptools',
   python  => $python2,
-  version => '>= 2.1',
+  version => '== 2.1',
 }
 python::package { "pip for $python2":
   package => 'pip',
   python  => $python2,
-  version => '>= 7.1.2',
+  version => '== 7.1.2',
 }
 python::package { "virtualenv for $python2":
   package => 'virtualenv',
   python  => $python2,
-  version => '>= 13.1',
+  version => '== 13.1',
 }
 
 # Install core libraries for Python 3
 python::package { "setuptools for $python3":
   package => 'setuptools',
   python  => $python3,
-  version => '>= 2.1',
+  version => '== 2.1',
 }
 python::package { "pip for $python3":
   package => 'pip',
   python  => $python3,
-  version => '>= 7.1.2',
+  version => '== 7.1.2',
 }
 python::package { "virtualenv for $python3":
   package => 'virtualenv',
   python  => $python3,
-  version => '>= 13.1',
+  version => '== 13.1',
 }
 
 # Install development tools for Python 2
 python::package { "cookiecutter for $python2":
   package => 'cookiecutter',
   python  => $python2,
-  version => '>= 1, < 2',
+  version => '== 1.0.0',
 }
 
 # Install development tools for Python 3
 python::package { "pep8 for $python3":
   package => 'pep8',
   python  => $python3,
-  version => '>= 1.6',
+  version => '== 1.6',
 }
 python::package { "autopep8 for $python3":
   package => 'autopep8',
   python  => $python3,
-  version => '>= 1.2',
+  version => '== 1.2',
 }
 python::package { "pep257 for $python3":
   package => 'pep257',
   python  => $python3,
-  version => '>= 0.6',
+  version => '== 0.6',
 }
 python::package { "pylint for $python3":
   package => 'pylint',
   python  => $python3,
-  version => '>= 1.4',
+  version => '== 1.4',
 }
 python::package { "cookiecutter for $python3":
   package => 'cookiecutter',
   python  => $python3,
-  version => '>= 1, < 2',
+  version => '== 1.0.0',
 }
 
 # Install tools written in Python 2
@@ -93,7 +93,7 @@ python::package { "ansible for $python2":
 python::package { "gdm for $python3":
   package => 'gdm',
   python  => $python3,
-  version => '>= 0.7.dev1',
+  version => '== 0.7.dev1',
 }
 python::package { "httpie for $python3":
   package => 'httpie',
