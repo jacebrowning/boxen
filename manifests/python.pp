@@ -105,3 +105,9 @@ python::package { "honcho for $python3":
   python  => $python3,
   version => '== 0.6.6',
 }
+
+python::package { "ipython for $python3":
+  package => 'ipython',
+  python  => $python3,
+  version => '== 0.13.2',
+}
