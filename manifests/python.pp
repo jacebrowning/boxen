@@ -111,3 +111,9 @@ python::package { "ipython for $python3":
   python  => $python3,
   version => '== 0.13.2',
 }
+
+python::package { "notebook for $python3":
+  package => 'notebook',
+  python  => $python3,
+  version => '== 4.0.2',
+}
