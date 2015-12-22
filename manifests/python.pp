@@ -93,7 +93,7 @@ python::package { "ansible for $python2":
 python::package { "gdm for $python3":
   package => 'gdm',
   python  => $python3,
-  version => '== 0.7.dev1',
+  version => '== 0.7.dev3',
 }
 python::package { "httpie for $python3":
   package => 'httpie',
@@ -105,13 +105,11 @@ python::package { "honcho for $python3":
   python  => $python3,
   version => '== 0.6.6',
 }
-
 python::package { "ipython for $python3":
   package => 'ipython',
   python  => $python3,
   version => '== 0.13.2',
 }
-
 python::package { "notebook for $python3":
   package => 'notebook',
   python  => $python3,
