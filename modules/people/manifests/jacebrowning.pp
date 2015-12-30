@@ -71,7 +71,7 @@ class people::jacebrowning {
   python::package { "mine for $python3":
     package => 'mine',
     python  => $python3,
-    version => '>=0.3.dev4,<0.4',
+    version => '>=0.4,<0.5',
   }
   python::package { "curmit for $python3":
     package => 'curmit',
