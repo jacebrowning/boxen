@@ -86,7 +86,7 @@ class people::jacebrowning {
   python::package { "dropthebeat for $python3":
     package => 'dropthebeat',
     python  => $python3,
-    version => '>=0.2,<0.3',
+    version => '>=0.2.1,<0.3',
   }
 
 }
