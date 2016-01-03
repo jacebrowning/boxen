@@ -44,6 +44,26 @@ python::package { "virtualenv for $python3":
 }
 
 # Install development tools for Python 2
+python::package { "pep8 for $python2":
+  package => 'pep8',
+  python  => $python2,
+  version => '>=1.6,<2',
+}
+python::package { "autopep8 for $python2":
+  package => 'autopep8',
+  python  => $python2,
+  version => '>=1.2,<2',
+}
+python::package { "pep257 for $python2":
+  package => 'pep257',
+  python  => $python2,
+  version => '>=0.7,<0.8',
+}
+python::package { "pylint for $python2":
+  package => 'pylint',
+  python  => $python2,
+  version => '>=1.4,<2',
+}
 python::package { "cookiecutter for $python2":
   package => 'cookiecutter',
   python  => $python2,
