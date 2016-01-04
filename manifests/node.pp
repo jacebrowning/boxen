@@ -1,6 +1,11 @@
-nodejs::version { 'v0.12.7': }
+$node_version = "4.0.0"
 
-class { 'nodejs::global': version => 'v0.12.7' }
+class { 'nodejs::global':
+  version => $node_version
+}
 
-nodejs::module { 'bower': node_version => 'v0.12.7' }
-nodejs::module { 'ember-cli': node_version => 'v0.12.7' }
+npm_module { "bower for ${node_version}":
+  module       => 'bower',
+  version      => '~> 1.7.2',
+  node_version => $node_version,
+}

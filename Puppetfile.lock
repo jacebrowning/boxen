@@ -86,7 +86,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-nodejs
   specs:
-    nodejs (4.0.1)
+    nodejs (5.0.5)
 
 GITHUBTARBALL
   remote: boxen/puppet-oclint
@@ -234,7 +234,7 @@ DEPENDENCIES
   java (= 1.8.4)
   module_data (= 0.0.3)
   nginx (= 1.4.4)
-  nodejs (= 4.0.1)
+  nodejs (= 5.0.5)
   oclint (= 1.1.6)
   ohmyzsh (= 1.0.0)
   openssl (= 1.0.0)
