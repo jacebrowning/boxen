@@ -12,7 +12,7 @@ Python development:
 Ember development:
 
 * [Node.js](http://nodejs.org): `$ brew install node`
-* [n (Node Switcher)](https://github.com/tj/n) `$ npm install -g n && n 0.12.7`
+* [n (Node Switcher)](https://github.com/tj/n) `$ npm install -g n && n 4.0.0`
 * [Bower](http://bower.io/): `$ npm install -g bower`
 
 iOS development:

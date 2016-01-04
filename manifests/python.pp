@@ -12,7 +12,7 @@ file { "version":
     path    => "${boxen::config::home}/pyenv/version",
     ensure  => present,
     replace => true,
-    content => "$python3\n\n$python2\n";
+    content => "$python2\n\n$python3\n";
 }
 
 # Install core libraries for Python 2
