@@ -1,4 +1,4 @@
-$node_version = "4.0.0"
+$node_version = "4.2.4"
 
 class { 'nodejs::global':
   version => $node_version
