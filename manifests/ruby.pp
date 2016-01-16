@@ -6,7 +6,7 @@ class { 'ruby::global': version => $ruby_version }
 
 ruby_gem { 'bundler for all rubies':
   gem          => 'bundler',
-  version      => '~> 1.0',
+  version      => '~> 1.11',
   ruby_version => '*',
 }
 
