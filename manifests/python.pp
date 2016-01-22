@@ -109,7 +109,7 @@ python::package { "ansible for $python2":
 python::package { "gdm for $python3":
   package => 'gdm',
   python  => $python3,
-  version => '>=0.8,<0.9',
+  version => '>=0.8.1,<0.9',
 }
 python::package { "httpie for $python3":
   package => 'httpie',
