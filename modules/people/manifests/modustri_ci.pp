@@ -9,16 +9,16 @@ class people::modustri_ci {
     source => 'modustri/api',
     provider => git,
   }
-  repository { "${boxen::config::srcdir}/modustri-uc-ios":
-    source => 'modustri/uc-mobile',
+  repository { "${boxen::config::srcdir}/modustri-hde-ios":
+    source => 'modustri/hde-ios',
     provider => git,
   }
-  repository { "${boxen::config::srcdir}/modustri-uc-web":
-    source => 'modustri/uc-web',
+  repository { "${boxen::config::srcdir}/modustri-hde-web":
+    source => 'modustri/hde-web',
     provider => git,
   }
-  repository { "${boxen::config::srcdir}/modustri-uc":
-    source => 'modustri/uc',
+  repository { "${boxen::config::srcdir}/modustri-hde":
+    source => 'modustri/hde',
     provider => git,
   }
 
