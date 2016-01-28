@@ -23,7 +23,7 @@ python::package { "setuptools for $python2":
 python::package { "pip for $python2":
   package => 'pip',
   python  => $python2,
-  version => '>=8,<9',
+  version => '>=8.0.2,<9',
 }
 python::package { "virtualenv for $python2":
   package => 'virtualenv',
@@ -39,7 +39,7 @@ python::package { "setuptools for $python3":
 python::package { "pip for $python3":
   package => 'pip',
   python  => $python3,
-  version => '>=8,<9',
+  version => '>=8.0.2,<9',
 }
 python::package { "virtualenv for $python3":
   package => 'virtualenv',
