@@ -10,5 +10,6 @@ npm_module { "bower for ${node_version}":
   node_version => $node_version,
 }
 
-phantomjs::version { '2.0.0': }
-phantomjs::global { '2.0.0': }
+include phantomjs
+phantomjs::version { '2.1.1': }
+phantomjs::global { '2.1.1': }
