@@ -95,11 +95,6 @@ python::package { "pylint for $python3":
   python  => $python3,
   version => '>=1.4,<2',
 }
-python::package { "cookiecutter for $python3":
-  package => 'cookiecutter',
-  python  => $python3,
-  version => '>=1.0.0,<2',
-}
 
 # Install tools written in Python 2
 python::package { "ansible for $python2":
@@ -132,4 +127,9 @@ python::package { "notebook for $python3":
   package => 'notebook',
   python  => $python3,
   version => '>=4.0.2,<5',
+}
+python::package { "cookiecutter for $python3":
+  package => 'cookiecutter',
+  python  => $python3,
+  version => '>=1.3,<2',
 }
