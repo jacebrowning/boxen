@@ -10,6 +10,11 @@ ruby_gem { 'bundler for all rubies':
   ruby_version => '*',
 }
 
+ruby_gem { 'travis for all rubies':
+  gem          => 'travis',
+  ruby_version => $ruby_version,
+}
+
 ruby_gem { 'terminal-notifier for current ruby':
   gem          => 'terminal-notifier',
   ruby_version => $ruby_version,
