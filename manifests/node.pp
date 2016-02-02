@@ -15,4 +15,4 @@ include phantomjs
 phantomjs::version { '1.9.8': }
 phantomjs::version { '2.1.1': }
 
-phantomjs::global { '2.1.1': }
+phantomjs::global { '1.9.8': }
