@@ -1,6 +1,6 @@
 class people::jacebrowning {
 
-  # shell
+  # Shell
   include zsh
   include ohmyzsh
   repository { "/Users/${::boxen_user}/.dotfiles":
@@ -18,16 +18,16 @@ class people::jacebrowning {
     command => "/usr/bin/make -C /Users/${::boxen_user}/.dotfiles"
   }
 
-  # terminal
+  # Terminal
   include iterm2::dev
 
-  # version control
+  # Version control
   include github_for_mac
   include sourcetree
   include p4merge
   package { 'diffmerge': provider => brewcask }
 
-  # development
+  # Development
   include dia
   package { 'cronnix': provider => 'brewcask' }
   file { "${boxen::config::srcdir}/sublime-settings":
@@ -49,7 +49,7 @@ class people::jacebrowning {
     target => "/Users/${::boxen_user}/.atom",
   }
 
-  # applications
+  # Applications
   include daisy_disk
   include appcleaner
   include spectacle
@@ -58,10 +58,10 @@ class people::jacebrowning {
   package { 'caffeine': provider => 'brewcask' }
   package { 'gitter': provider => 'brewcask'}
 
-  # tools written in Python 2
+  # Tools written in Python 2
   $python2 = '2.7.10'
 
-  # tools written in Python 3
+  # Tools written in Python 3
   $python3 = '3.5.0'
   python::package { "doorstop for $python3":
     package => 'doorstop',
