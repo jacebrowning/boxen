@@ -39,14 +39,17 @@ class people::jacebrowning {
     provider => homebrew,
   }
   include atom
-  repository { "/Users/${::boxen_user}/.atom":
+  repository { "/Users/${::boxen_user}/Dropbox/Settings/Atom":
     source => 'jacebrowning/atom-config',
     provider => git,
-    ensure   => 'origin/HEAD',
+  }
+  file { "/Users/${::boxen_user}/.atom":
+    ensure => link,
+    target => "/Users/${::boxen_user}/Dropbox/Settings/Atom",
   }
   file { "${boxen::config::srcdir}/atom-config":
     ensure => link,
-    target => "/Users/${::boxen_user}/.atom",
+    target => "/Users/${::boxen_user}/Dropbox/Settings/Atom",
   }
 
   # Applications
