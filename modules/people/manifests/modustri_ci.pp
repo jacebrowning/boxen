@@ -17,6 +17,9 @@ class people::modustri_ci {
     require => File[$dotfiles],
     command => "/usr/bin/make -C /Users/${::boxen_user}/.dotfiles"
   }
+  git::config::global { 'color.ui':
+    value  => 'false'
+  }
 
   # Applications
   include iterm2::dev
