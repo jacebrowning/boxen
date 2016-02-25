@@ -11,7 +11,7 @@ Python development:
 
 Ruby development:
 
-* Ruby 2.3.0
+* Ruby 2.2.3 and 2.3.0
 
 Ember development:
 
