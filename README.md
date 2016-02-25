@@ -9,6 +9,10 @@ Python development:
 * [Python 3.5](https://www.python.org/downloads): `$ brew install python3`
 * [virtualenv](https://virtualenv.pypa.io/en/latest/installation.html): `$ pip3 install virtualenv`
 
+Ruby development:
+
+* Ruby 2.3.0
+
 Ember development:
 
 * [Node.js](http://nodejs.org): `$ brew install node`
