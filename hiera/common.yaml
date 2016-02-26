@@ -10,6 +10,7 @@ boxen::personal::homebrew_packages:
   - groovy
   - lcov
   - imagemagick
+  - sqlite3
 
 "nodejs::build::ensure": "v2.1.0"
 "nodejs::nodenv::ensure": "v0.2.0"
