@@ -9,6 +9,10 @@ npm_module { "bower for ${node_version}":
   version      => '~> 1.7.2',
   node_version => $node_version,
 }
+npm_module { "diff-so-fancy for default node":
+  module       => 'diff-so-fancy',
+  node_version => $node_version,
+}
 
 include phantomjs
 
