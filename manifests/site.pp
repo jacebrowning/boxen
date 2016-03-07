@@ -84,6 +84,7 @@ node default {
   }
 
   # tools needed edit this project
+  include atom
   file { "${boxen::config::srcdir}/boxen":
     ensure => link,
     target => $boxen::config::repodir

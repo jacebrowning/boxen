@@ -38,7 +38,6 @@ class people::jacebrowning {
     ensure => installed,
     provider => homebrew,
   }
-  include atom
   repository { "/Users/${::boxen_user}/Dropbox/Settings/Atom":
     source => 'jacebrowning/atom-config',
     provider => git,
