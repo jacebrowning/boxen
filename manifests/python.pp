@@ -103,10 +103,10 @@ python::package { "ansible for $python2":
 }
 
 # Install tools written in Python 3
-python::package { "gdm for $python3":
-  package => 'gdm',
+python::package { "gitman for $python3":
+  package => 'gitman',
   python  => $python3,
-  version => '>=0.8.2,<0.9',
+  version => '>=0.8.3,<0.9',
 }
 python::package { "httpie for $python3":
   package => 'httpie',
