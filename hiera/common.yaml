@@ -3,8 +3,6 @@ boxen::personal::homebrew_packages:
   - findutils
   - gnu-tar
   - mercurial
-  - dos2unix
-  - unix2dos
   - forego
   - graphviz
   - groovy
