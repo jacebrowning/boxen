@@ -15,3 +15,5 @@ boxen::personal::homebrew_packages:
 
 "ruby::build::ensure": "v20160130"
 "ruby::rbenv::ensure": "v1.0.0"
+
+"python::pyenv::ensure": "v20160303"
