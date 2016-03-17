@@ -10,19 +10,22 @@ ruby_gem { 'bundler for all rubies':
   version      => '1.11.2',
   ruby_version => '*',
 }
+ruby_gem { 'foreman for all rubies':
+  gem          => 'foreman',
+  version      => '0.78.0',
+  ruby_version => '*',
+}
 
-ruby_gem { 'cocoapods for current ruby':
+ruby_gem { 'cocoapods for global ruby':
   gem          => 'cocoapods',
   version      => '0.39.0',
   ruby_version => $ruby_version,
 }
-
-ruby_gem { 'travis for current ruby':
+ruby_gem { 'travis for global ruby':
   gem          => 'travis',
   ruby_version => $ruby_version,
 }
-
-ruby_gem { 'terminal-notifier for current ruby':
+ruby_gem { 'terminal-notifier for global ruby':
   gem          => 'terminal-notifier',
   ruby_version => $ruby_version,
 }
