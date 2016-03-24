@@ -23,12 +23,12 @@ python::package { "setuptools for $python2":
 python::package { "pip for $python2":
   package => 'pip',
   python  => $python2,
-  version => '>=8.1.0,<9',
+  version => '>=8.1.1,<9',
 }
 python::package { "virtualenv for $python2":
   package => 'virtualenv',
   python  => $python2,
-  version => '>=14.0.1,<15'
+  version => '>=15.0.1,<16'
 }
 
 # Install core libraries for Python 3
@@ -39,12 +39,12 @@ python::package { "setuptools for $python3":
 python::package { "pip for $python3":
   package => 'pip',
   python  => $python3,
-  version => '>=8.1.0,<9',
+  version => '>=8.1.1,<9',
 }
 python::package { "virtualenv for $python3":
   package => 'virtualenv',
   python  => $python3,
-  version => '>=14.0.1,<15'
+  version => '>=15.0.1,<16'
 }
 
 # Install development tools for Python 2
