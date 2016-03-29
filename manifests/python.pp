@@ -93,7 +93,7 @@ python::package { "pep257 for $python3":
 python::package { "pylint for $python3":
   package => 'pylint',
   python  => $python3,
-  version => '>=1.4,<2',
+  version => '>= 1.5.4,<2',
 }
 
 # Install tools written in Python 2
