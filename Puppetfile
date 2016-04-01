@@ -72,7 +72,7 @@ github "postgresql",    "4.0.1"
 github "python",        "3.0.2", :repo => "mloberg/puppet-python"
 
 github "zsh",       "1.0.0"
-github "ohmyzsh",   "1.0.0", :repo => "samjsharpe/puppet-ohmyzsh"
+github "ohmyzsh",   "1.0.0", :repo => "erivello/puppet-ohmyzsh"
 github "iterm2",    "1.2.0"
 
 github "github_for_mac",    "1.0.3"

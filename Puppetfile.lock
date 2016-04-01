@@ -179,6 +179,11 @@ GITHUBTARBALL
     zsh (1.0.0)
 
 GITHUBTARBALL
+  remote: erivello/puppet-ohmyzsh
+  specs:
+    ohmyzsh (1.0.0)
+
+GITHUBTARBALL
   remote: mloberg/puppet-python
   specs:
     python (3.0.2)
@@ -202,11 +207,6 @@ GITHUBTARBALL
   remote: ripienaar/puppet-module-data
   specs:
     module_data (0.0.3)
-
-GITHUBTARBALL
-  remote: samjsharpe/puppet-ohmyzsh
-  specs:
-    ohmyzsh (1.0.0)
 
 GITHUBTARBALL
   remote: steinim/puppet-p4merge
