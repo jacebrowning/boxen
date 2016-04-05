@@ -52,7 +52,7 @@ Uninstall your current Homebrew setup (https://gist.github.com/mxcl/1173223) and
 $ xcode-select --install
 ```
 
-Clone this project:
+Clone this project by pasting these commands exactly:
 
 ```sh
 $ sudo mkdir -p /opt/boxen
