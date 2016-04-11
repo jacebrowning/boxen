@@ -12,5 +12,4 @@
 /vendor/gems/
 /vendor/puppet/cache
 /vendor/puppet/source
-*.sublime-workspace
 npm-debug.log

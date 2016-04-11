@@ -48,7 +48,9 @@ Documentation tooling:
 
 ## Installation
 
-Uninstall your current Homebrew setup (https://gist.github.com/mxcl/1173223) and delete leftover links to Homebrew installed in `/usr/local/bin`. Install Xcode tools:
+Unless this is a new machine, you will need to uninstall your current Homebrew setup (https://gist.github.com/mxcl/1173223) and delete leftover links to Homebrew installed in `/usr/local/bin`.
+
+Install Xcode and launch it to accept the license agreements. Install the Xcode command-line tools:
 
 ```sh
 $ xcode-select --install
