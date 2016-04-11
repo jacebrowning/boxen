@@ -75,6 +75,8 @@ github "zsh",       "1.0.0"
 github "ohmyzsh",   "1.0.0", :repo => "erivello/puppet-ohmyzsh"
 github "iterm2",    "1.2.0"
 
+github "chrome",            "1.2.0"
+github "firefox",           "1.2.3"
 github "github_for_mac",    "1.0.3"
 github "sourcetree",        "1.0.0"
 github "p4merge",           "0.0.3", :repo => "steinim/puppet-p4merge"

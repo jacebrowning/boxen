@@ -76,11 +76,9 @@ node default {
   include $ruby
 
   # web browsers
-  package { 'google-chrome': provider => 'brewcask' }
-  package { 'firefox': provider => 'brewcask' }
-  file { "/Applications/Firefox.app":
-    ensure => link,
-    target => "/Users/${::boxen_user}/Applications/Firefox.app",
+  include chrome
+  class { 'firefox':
+    version => '31.0'
   }
 
   # tools needed edit this project
