@@ -23,12 +23,12 @@ python::package { "setuptools for $python2":
 python::package { "pip for $python2":
   package => 'pip',
   python  => $python2,
-  version => '>=8.1.1,<9',
+  version => '>= 8.1.1, < 9',
 }
 python::package { "virtualenv for $python2":
   package => 'virtualenv',
   python  => $python2,
-  version => '>=15.0.1,<16'
+  version => '>= 15.0.1, < 16'
 }
 
 # Install core libraries for Python 3
@@ -39,97 +39,76 @@ python::package { "setuptools for $python3":
 python::package { "pip for $python3":
   package => 'pip',
   python  => $python3,
-  version => '>=8.1.1,<9',
+  version => '>= 8.1.1, < 9',
 }
 python::package { "virtualenv for $python3":
   package => 'virtualenv',
   python  => $python3,
-  version => '>=15.0.1,<16'
-}
-
-# Install development tools for Python 2
-python::package { "pep8 for $python2":
-  package => 'pep8',
-  python  => $python2,
-  version => '>=1.6,<2',
-}
-python::package { "autopep8 for $python2":
-  package => 'autopep8',
-  python  => $python2,
-  version => '>=1.2,<2',
-}
-python::package { "pep257 for $python2":
-  package => 'pep257',
-  python  => $python2,
-  version => '>=0.7,<0.8',
-}
-python::package { "pylint for $python2":
-  package => 'pylint',
-  python  => $python2,
-  version => '>=1.4,<2',
-}
-python::package { "cookiecutter for $python2":
-  package => 'cookiecutter',
-  python  => $python2,
-  version => '>=1.0.0,<2',
+  version => '>= 15.0.1, < 16'
 }
 
 # Install development tools for Python 3
 python::package { "pep8 for $python3":
   package => 'pep8',
   python  => $python3,
-  version => '>=1.6,<2',
+  version => '>= 1.6, < 2',
 }
 python::package { "autopep8 for $python3":
   package => 'autopep8',
   python  => $python3,
-  version => '>=1.2,<2',
+  version => '>= 1.2, < 2',
 }
 python::package { "pep257 for $python3":
   package => 'pep257',
   python  => $python3,
-  version => '>=0.7,<0.8',
+  version => '>= 0.7, < 0.8',
 }
 python::package { "pylint for $python3":
   package => 'pylint',
   python  => $python3,
-  version => '>= 1.5.4,<2',
+  version => '>= 1.5.4, < 2',
+}
+python::package { "pylama for $python3":
+  package => 'pylama',
+  python  => $python3,
+  version => '>= 7.0.9, < 8',
 }
 
 # Install tools written in Python 2
 python::package { "ansible for $python2":
   package => 'ansible',
   python  => $python2,
+  version => '>= 2.0.0.0, < 3'
 }
 
 # Install tools written in Python 3
 python::package { "gitman for $python3":
   package => 'gitman',
   python  => $python3,
-  version => '>=0.9,<0.10',
+  version => '>= 0.9, < 0.10',
 }
 python::package { "httpie for $python3":
   package => 'httpie',
   python  => $python3,
-  version => '>=0.9.2,<1',
+  version => '>= 0.9.2, < 1',
 }
 python::package { "honcho for $python3":
   package => 'honcho',
   python  => $python3,
-  version => '>=0.6.6,<0.7',
+  version => '>= 0.6.6, < 0.7',
 }
 python::package { "ipython for $python3":
   package => 'ipython',
   python  => $python3,
-  version => '>=0.13.2,<0.14',
+  version => '>= 0.13.2, < 0.14',
 }
 python::package { "notebook for $python3":
   package => 'notebook',
   python  => $python3,
-  version => '>=4.0.2,<5',
+  version => '>= 4.0.2, < 5',
 }
 python::package { "cookiecutter for $python3":
   package => 'cookiecutter',
   python  => $python3,
-  version => '>=1.3,<2',
+  version => '>= 1.3, < 2',
 }
