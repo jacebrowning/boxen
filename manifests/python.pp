@@ -85,7 +85,7 @@ python::package { "ansible for $python2":
 python::package { "gitman for $python3":
   package => 'gitman',
   python  => $python3,
-  version => '>= 0.9, < 0.10',
+  version => '>= 0.10, < 0.11',
 }
 python::package { "httpie for $python3":
   package => 'httpie',
