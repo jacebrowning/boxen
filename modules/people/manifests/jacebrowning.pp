@@ -3,19 +3,19 @@ class people::jacebrowning {
   # Shell
   include zsh
   include ohmyzsh
-  repository { "/Users/${::boxen_user}/.dotfiles":
-      source => 'jacebrowning/dotfiles',
-      provider => git,
-      ensure   => 'origin/HEAD',
+  $dotfiles_custom = "/Users/${::boxen_user}/.dotfiles-custom"
+  repository { $dotfiles_custom:
+    source => 'jacebrowning/dotfiles',
+    provider => git,
+    ensure   => 'origin/HEAD',
   }
-  $dotfiles =  "${boxen::config::srcdir}/dotfiles"
-  file { $dotfiles:
+  exec { "install custom dotfiles":
+    require => Repository[$dotfiles_custom],
+    command => "/usr/bin/make -C $dotfiles_custom"
+  }
+  file { "${boxen::config::srcdir}/dotfiles-custom":
     ensure => link,
-    target => "/Users/${::boxen_user}/.dotfiles"
-  }
-  exec { "install dotfiles":
-    require => File[$dotfiles],
-    command => "/usr/bin/make -C /Users/${::boxen_user}/.dotfiles"
+    target => "/Users/${::boxen_user}/.dotfiles-custom"
   }
 
   # Terminal
