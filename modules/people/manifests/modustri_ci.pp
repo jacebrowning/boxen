@@ -3,20 +3,6 @@ class people::modustri_ci {
   # Shell
   include zsh
   include ohmyzsh
-  repository { "/Users/${::boxen_user}/.dotfiles":
-    source => 'modustri/dotfiles',
-    provider => git,
-    ensure   => 'origin/HEAD',
-  }
-  $dotfiles =  "${boxen::config::srcdir}/dotfiles"
-  file { $dotfiles:
-    ensure => link,
-    target => "/Users/${::boxen_user}/.dotfiles"
-  }
-  exec { "install dotfiles":
-    require => File[$dotfiles],
-    command => "/usr/bin/make -C /Users/${::boxen_user}/.dotfiles"
-  }
   git::config::global { 'color.ui':
     value  => 'false'
   }

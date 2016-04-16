@@ -53,29 +53,46 @@ Homebrew::Formula <| |> -> Package <| |>
 
 node default {
 
-  # core modules, needed for most things
+  # Core modules, needed for most things
   include dnsmasq
   include git
   include hub
   include nginx
   include brewcask
 
-  # fail if FDE is not enabled
+  # Fail if FDE is not enabled
   if $::root_encrypted == 'no' {
     fail('Please enable full disk encryption and try again')
   }
 
-  # databases
-  include postgresql
+  # Git configuration
+  $dotfiles = "/Users/${::boxen_user}/.dotfiles"
+  repository { $dotfiles:
+    source => 'modustri/dotfiles',
+    provider => git,
+    ensure   => 'origin/HEAD',
+  }
+  exec { "install dotfiles":
+    require => Repository[$dotfiles],
+    command => "/usr/bin/make -C $dotfiles"
+  }
+  file { "${boxen::config::srcdir}/dotfiles":
+    ensure => link,
+    target => "/Users/${::boxen_user}/.dotfiles"
+  }
 
-  # programming languages
+  # Databases and provisioning
+  include postgresql
+  include heroku
+
+  # Programming languages
   include $ios
   include $java
   include $node
   include $python
   include $ruby
 
-  # web browsers
+  # Web browsers
   include chrome
   class { 'firefox':
     version => '31.0'
@@ -84,14 +101,11 @@ node default {
     command => 'cd ~/Library/Application\ Support/Firefox/Profiles && echo "user_pref(\"app.update.enabled\", false);\n" > user.js && mv user.js *.default/',
   }
 
-  # tools needed edit this project
+  # Tools needed edit this project
   include atom
   file { "${boxen::config::srcdir}/boxen":
     ensure => link,
     target => $boxen::config::repodir
   }
-
-  # provisioning and deployment
-  include heroku
 
 }
