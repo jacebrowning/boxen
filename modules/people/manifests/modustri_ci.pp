@@ -24,6 +24,7 @@ class people::modustri_ci {
   # Applications
   include iterm2::dev
   include sublime_text
+  include atom
 
   # Projects
   repository { "${boxen::config::srcdir}/modustri-api":

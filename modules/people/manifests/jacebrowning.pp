@@ -80,11 +80,6 @@ class people::jacebrowning {
     python  => $python3,
     version => '>=1.0,<2',
   }
-  python::package { "thefuck for $python3":
-    package => 'thefuck',
-    python  => $python3,
-    version => '>=3.1,<4',
-  }
   python::package { "dropthebeat for $python3":
     package => 'dropthebeat',
     python  => $python3,

@@ -112,3 +112,8 @@ python::package { "cookiecutter for $python3":
   python  => $python3,
   version => '>= 1.3, < 2',
 }
+python::package { "thefuck for $python3":
+  package => 'thefuck',
+  python  => $python3,
+  version => '>=3.1,<4',
+}
