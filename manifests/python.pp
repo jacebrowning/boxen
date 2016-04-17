@@ -110,7 +110,7 @@ python::package { "notebook for $python3":
 python::package { "cookiecutter for $python3":
   package => 'cookiecutter',
   python  => $python3,
-  version => '>= 1.3, < 2',
+  version => '>= 1.4, < 2',
 }
 python::package { "thefuck for $python3":
   package => 'thefuck',
