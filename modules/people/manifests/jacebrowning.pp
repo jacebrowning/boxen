@@ -68,7 +68,7 @@ class people::jacebrowning {
   python::package { "doorstop for $python3":
     package => 'doorstop',
     python  => $python3,
-    version => '>=0.8,<0.9',
+    version => '>=1.0,<2.0',
   }
   python::package { "mine for $python3":
     package => 'mine',
