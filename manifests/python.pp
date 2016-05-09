@@ -1,5 +1,5 @@
 # Install Python versions
-$python2 = '2.7.10'
+$python2 = '2.7.11'
 $python3 = '3.5.0'
 python::version { '2.6.9': }
 python::version { "$python2": }
