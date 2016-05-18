@@ -1,1 +1,6 @@
-"boxen::config::srcdir": "/Users/Browning/Programs"
+boxen::config::srcdir: "/Users/Browning/Programs"
+
+boxen::personal::homebrew_packages:
+  - optipng
+  - mozjpeg
+  - gifsicle
