@@ -4,3 +4,4 @@ boxen::personal::homebrew_packages:
   - optipng
   - mozjpeg
   - gifsicle
+  - tree
