@@ -94,12 +94,7 @@ node default {
 
   # Web browsers
   include chrome
-  class { 'firefox':
-    version => '31.0'
-  }
-  exec { 'disable firefox updates':
-    command => 'cd ~/Library/Application\ Support/Firefox/Profiles && echo "user_pref(\"app.update.enabled\", false);\n" > user.js && mv user.js *.default/',
-  }
+  include firefox
 
   # Tools needed edit this project
   include atom

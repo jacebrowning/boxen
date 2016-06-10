@@ -117,3 +117,8 @@ python::package { "thefuck for $python3":
   python  => $python3,
   version => '>=3.1,<4',
 }
+python::package { "sappy for $python3":
+  package => 'sappy',
+  python  => $python3,
+  version => '>=0.1,<0.2',
+}
