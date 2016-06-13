@@ -1,7 +1,0 @@
-boxen::personal::homebrew_packages:
-  - groovy
-  - lcov
-  - ngrok
-
-boxen::personal::osx_apps:
-  - caffeine
