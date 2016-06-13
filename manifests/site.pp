@@ -65,22 +65,6 @@ node default {
     fail('Please enable full disk encryption and try again')
   }
 
-  # Git configuration
-  $dotfiles = "/Users/${::boxen_user}/.dotfiles"
-  repository { $dotfiles:
-    source => 'modustri/dotfiles',
-    provider => git,
-    ensure   => 'origin/HEAD',
-  }
-  exec { "install dotfiles":
-    require => Repository[$dotfiles],
-    command => "/usr/bin/make -C $dotfiles"
-  }
-  file { "${boxen::config::srcdir}/dotfiles":
-    ensure => link,
-    target => "/Users/${::boxen_user}/.dotfiles"
-  }
-
   # Databases and provisioning
   include postgresql
   include heroku
