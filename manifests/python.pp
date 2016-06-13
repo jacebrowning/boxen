@@ -1,5 +1,5 @@
 # Install Python versions
-$python2 = '2.7.10'
+$python2 = '2.7.11'
 $python3 = '3.5.0'
 python::version { '2.6.9': }
 python::version { "$python2": }
@@ -12,116 +12,113 @@ file { "version":
     path    => "${boxen::config::home}/pyenv/version",
     ensure  => present,
     replace => true,
-    content => "$python2\n3.4.3\n$python3\n";
+    content => "$python3\n\n$python2\n";
 }
 
 # Install core libraries for Python 2
 python::package { "setuptools for $python2":
   package => 'setuptools',
   python  => $python2,
-  version => '>= 2.1',
 }
 python::package { "pip for $python2":
   package => 'pip',
   python  => $python2,
-  version => '>= 7.1.2',
+  version => '>= 8.1.2, < 9',
 }
 python::package { "virtualenv for $python2":
   package => 'virtualenv',
   python  => $python2,
-  version => '>= 13.1',
+  version => '>= 15.0.1, < 16'
 }
 
 # Install core libraries for Python 3
 python::package { "setuptools for $python3":
   package => 'setuptools',
   python  => $python3,
-  version => '>= 2.1',
 }
 python::package { "pip for $python3":
   package => 'pip',
   python  => $python3,
-  version => '>= 7.1.2',
+  version => '>= 8.1.2, < 9',
 }
 python::package { "virtualenv for $python3":
   package => 'virtualenv',
   python  => $python3,
-  version => '>= 13.1',
-}
-
-# Install development tools for Python 2
-python::package { "cookiecutter for $python2":
-  package => 'cookiecutter',
-  python  => $python2,
-  version => '>= 1, < 2',
+  version => '>= 15.0.1, < 16'
 }
 
 # Install development tools for Python 3
 python::package { "pep8 for $python3":
   package => 'pep8',
   python  => $python3,
-  version => '>= 1.6',
+  version => '>= 1.6, < 2',
 }
 python::package { "autopep8 for $python3":
   package => 'autopep8',
   python  => $python3,
-  version => '>= 1.2',
+  version => '>= 1.2, < 2',
 }
 python::package { "pep257 for $python3":
   package => 'pep257',
   python  => $python3,
-  version => '>= 0.6',
+  version => '>= 0.7, < 0.8',
 }
 python::package { "pylint for $python3":
   package => 'pylint',
   python  => $python3,
-  version => '>= 1.4',
+  version => '>= 1.5.4, < 2',
 }
-python::package { "cookiecutter for $python3":
-  package => 'cookiecutter',
+python::package { "pylama for $python3":
+  package => 'pylama',
   python  => $python3,
-  version => '>= 1, < 2',
+  version => '>= 7.0.9, < 8',
 }
 
 # Install tools written in Python 2
 python::package { "ansible for $python2":
   package => 'ansible',
   python  => $python2,
+  version => '>= 2.0.0.0, < 3'
 }
 
 # Install tools written in Python 3
-python::package { "doorstop for $python3":
-  package => 'doorstop',
+python::package { "gitman for $python3":
+  package => 'gitman',
   python  => $python3,
-  version => '>= 0.8',
+  version => '>= 1.0.1, < 2',
 }
-python::package { "gdm for $python3":
-  package => 'gdm',
+python::package { "httpie for $python3":
+  package => 'httpie',
   python  => $python3,
-  version => '>= 0.5.dev3',
+  version => '>= 0.9.2, < 1',
 }
-python::package { "mine for $python3":
-  package => 'mine',
+python::package { "honcho for $python3":
+  package => 'honcho',
   python  => $python3,
-  version => '>= 0.3.dev1',
+  version => '>= 0.6.6, < 0.7',
 }
-python::package { "curmit for $python3":
-  package => 'curmit',
+python::package { "ipython for $python3":
+  package => 'ipython',
   python  => $python3,
-  version => '>= 1.0',
+  version => '>= 0.13.2, < 0.14',
+}
+python::package { "notebook for $python3":
+  package => 'notebook',
+  python  => $python3,
+  version => '>= 4.0.2, < 5',
+}
+python::package { "cookiecutter for $python3":
+  package => 'cookiecutter',
+  python  => $python3,
+  version => '>= 1.4, < 2',
 }
 python::package { "thefuck for $python3":
   package => 'thefuck',
   python  => $python3,
-  version => '>= 3.1',
+  version => '>=3.1,<4',
 }
-
-# Install documentation tools
-package { 'pandoc':
-  ensure => installed,
-  provider => homebrew,
-}
-package { 'graphviz':
-  ensure => installed,
-  provider => homebrew,
+python::package { "sappy for $python3":
+  package => 'sappy',
+  python  => $python3,
+  version => '>=0.2,<0.3',
 }
