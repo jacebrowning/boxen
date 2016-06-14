@@ -120,5 +120,5 @@ python::package { "thefuck for $python3":
 python::package { "sappy for $python3":
   package => 'sappy',
   python  => $python3,
-  version => '>=0.2,<0.3',
+  version => '>=0.2.1,<0.3',
 }
