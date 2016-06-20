@@ -11,6 +11,11 @@ boxen::personal::homebrew_packages:
   - sqlite3
   - devd
   - cloc
+  - optipng
+  - mozjpeg
+  - gifsicle
+  - tree
+  - direnv
 
 "nodejs::build::ensure": "v2.1.0"
 "nodejs::nodenv::ensure": "v0.2.0"
