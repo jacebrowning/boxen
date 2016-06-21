@@ -53,17 +53,17 @@ Homebrew::Formula <| |> -> Package <| |>
 
 node default {
 
+  # Fail if FDE is not enabled
+  if $::root_encrypted == 'no' {
+    fail('Please enable full disk encryption and try again')
+  }
+
   # Core modules, needed for most things
   include dnsmasq
   include git
   include hub
   include nginx
   include brewcask
-
-  # Fail if FDE is not enabled
-  if $::root_encrypted == 'no' {
-    fail('Please enable full disk encryption and try again')
-  }
 
   # Databases and provisioning
   include postgresql
@@ -76,15 +76,13 @@ node default {
   include $python
   include $ruby
 
+  # Editors
+  include atom
+
   # Web browsers
   include chrome
   include firefox
 
-  # Tools needed edit this project
-  include atom
-  file { "${boxen::config::srcdir}/boxen":
-    ensure => link,
-    target => $boxen::config::repodir
-  }
-
+  # Documentation tools
+  include dia
 }

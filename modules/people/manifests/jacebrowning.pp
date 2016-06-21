@@ -27,16 +27,24 @@ class people::jacebrowning {
   include p4merge
   package { 'diffmerge': provider => brewcask }
 
-  # Development
-  include dia
-  package { 'cronnix': provider => 'brewcask' }
+  # Applications
+  include daisy_disk
+  include appcleaner
+  include spectacle
+  package { 'skype': provider => 'brewcask' }
+  package { 'macpilot': provider => 'brewcask' }
+  package { 'caffeine': provider => 'brewcask' }
+  package { 'gitter': provider => 'brewcask'}
+    package { 'cronnix': provider => 'brewcask' }
+
+  # Projects
+  file { "${boxen::config::srcdir}/boxen":
+    ensure => link,
+    target => $boxen::config::repodir
+  }
   file { "${boxen::config::srcdir}/sublime-settings":
     ensure => link,
     target => "/Users/${::boxen_user}/Library/Application Support/Sublime Text 3/Packages/User"
-  }
-  package { 'pandoc':
-    ensure => installed,
-    provider => homebrew,
   }
   repository { "/Users/${::boxen_user}/Dropbox/Settings/Atom":
     source => 'jacebrowning/atom-config',
@@ -50,15 +58,6 @@ class people::jacebrowning {
     ensure => link,
     target => "/Users/${::boxen_user}/Dropbox/Settings/Atom",
   }
-
-  # Applications
-  include daisy_disk
-  include appcleaner
-  include spectacle
-  package { 'skype': provider => 'brewcask' }
-  package { 'macpilot': provider => 'brewcask' }
-  package { 'caffeine': provider => 'brewcask' }
-  package { 'gitter': provider => 'brewcask'}
 
   # Tools written in Python 2
   $python2 = '2.7.10'

@@ -16,6 +16,7 @@ boxen::personal::homebrew_packages:
   - gifsicle
   - tree
   - direnv
+  - pandoc
 
 "nodejs::build::ensure": "v2.1.0"
 "nodejs::nodenv::ensure": "v0.2.0"
