@@ -35,7 +35,11 @@ class people::jacebrowning {
   package { 'macpilot': provider => 'brewcask' }
   package { 'caffeine': provider => 'brewcask' }
   package { 'gitter': provider => 'brewcask'}
-    package { 'cronnix': provider => 'brewcask' }
+  package { 'cronnix': provider => 'brewcask' }
+  package { 'sococo': provider => 'brewcask' }
+  package { 'flowdock': provider => 'brewcask' }
+  package { 'postico': provider => 'brewcask' }
+  package { 'sequel-pro': provider => 'brewcask' }
 
   # Projects
   file { "${boxen::config::srcdir}/boxen":
