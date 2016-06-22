@@ -115,10 +115,15 @@ python::package { "cookiecutter for $python3":
 python::package { "thefuck for $python3":
   package => 'thefuck',
   python  => $python3,
-  version => '>=3.1,<4',
+  version => '>= 3.1, < 4',
 }
 python::package { "sappy for $python3":
   package => 'sappy',
   python  => $python3,
-  version => '>=0.2.1,<0.3',
+  version => '>= 0.2.1, < 0.3',
+}
+python::package { "awscli for $python3":
+  package => 'awscli',
+  python  => $python3,
+  version => '>= 1.10.38, < 2',
 }
