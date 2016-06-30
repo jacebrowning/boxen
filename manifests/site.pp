@@ -65,16 +65,19 @@ node default {
   include nginx
   include brewcask
 
-  # Databases and provisioning
-  include postgresql
-  include heroku
-
   # Programming languages
   include $ios
   include $java
   include $node
   include $python
   include $ruby
+
+  # Databases
+  include postgresql
+
+  # Services
+  include $circleci
+  include heroku
 
   # Editors
   include atom
@@ -85,4 +88,5 @@ node default {
 
   # Documentation tools
   include dia
+
 }
