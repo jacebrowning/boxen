@@ -1,13 +1,14 @@
-$ruby_version = '2.3.0'
+$ruby_version = '2.3.1'
 
 ruby::version { $ruby_version: }
 ruby::version { '2.2.3': }
+ruby::version { '2.3.0': }
 
 class { 'ruby::global': version => $ruby_version }
 
 ruby_gem { 'bundler for all rubies':
   gem          => 'bundler',
-  version      => '1.11.2',
+  version      => '1.12.5',
   ruby_version => '*',
 }
 ruby_gem { 'foreman for all rubies':
