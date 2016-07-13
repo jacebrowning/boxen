@@ -74,6 +74,7 @@ node default {
 
   # Databases
   include postgresql
+  include neo4j
 
   # Services
   include $circleci

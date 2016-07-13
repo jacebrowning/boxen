@@ -189,6 +189,11 @@ GITHUBTARBALL
     ohmyzsh (1.0.0)
 
 GITHUBTARBALL
+  remote: gjacobrobertson/puppet-neo4j
+  specs:
+    neo4j (1.0.0)
+
+GITHUBTARBALL
   remote: mloberg/puppet-python
   specs:
     python (3.0.2)
@@ -240,6 +245,7 @@ DEPENDENCIES
   iterm2 (= 1.2.0)
   java (= 1.8.4)
   module_data (= 0.0.3)
+  neo4j (= 1.0.0)
   nginx (= 1.4.4)
   nodejs (= 5.0.4)
   ohmyzsh (= 1.0.0)

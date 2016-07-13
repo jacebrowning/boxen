@@ -70,6 +70,7 @@ github "vagrant",       "3.3.4"
 github "heroku",        "2.0.0"
 github "postgresql",    "4.0.1"
 github "python",        "3.0.2", :repo => "mloberg/puppet-python"
+github "neo4j",         "1.0.0", :repo => "gjacobrobertson/puppet-neo4j"
 
 github "zsh",       "1.0.0"
 github "ohmyzsh",   "1.0.0", :repo => "erivello/puppet-ohmyzsh"
