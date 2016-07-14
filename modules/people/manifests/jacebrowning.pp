@@ -62,6 +62,10 @@ class people::jacebrowning {
     ensure => link,
     target => "/Users/${::boxen_user}/Dropbox/Settings/Atom",
   }
+  file { "${boxen::config::home}/homebrew/etc/circleci-cli/circleci":
+    ensure => link,
+    target => "/Users/${::boxen_user}/Dropbox/Settings/Etison/circleci",
+  }
 
   # Tools written in Python 2
   $python2 = '2.7.10'
