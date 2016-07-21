@@ -1,5 +1,7 @@
 $node_version = "4.2.4"
 
+nodejs::version { '5.9.1': }
+
 class { 'nodejs::global':
   version => $node_version
 }
@@ -21,9 +23,9 @@ npm_module { "svg2png-command for global node":
 
 include phantomjs
 
-$phantom_version = "1.9.8"
+$phantom_version = "2.1.1"
 
 phantomjs::version { $phantom_version: }
-phantomjs::version { '2.1.1': }
+phantomjs::version { '1.9.8': }
 
 phantomjs::global { $phantom_version: }

@@ -21,7 +21,7 @@ boxen::personal::homebrew_packages:
   - gpg
   - tmate
 
-"nodejs::build::ensure": "v2.1.0"
+"nodejs::build::ensure": "v2.3.3"
 "nodejs::nodenv::ensure": "v0.2.0"
 
 "ruby::build::ensure": "v20160602"
