@@ -63,7 +63,6 @@ github "sysctl",      "1.0.1"
 
 github "osx",   "1.0.0"
 
-github "java",          "1.8.4"
 github "nodejs",        "5.0.4"
 github "virtualbox",    "1.0.13"
 github "vagrant",       "3.3.4"
