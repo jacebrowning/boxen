@@ -8,8 +8,8 @@ class { 'nodejs::global':
 
 npm_module { "bower for global node":
   module       => 'bower',
-  version      => '~> 1.7.2',
-  node_version => $node_version,
+  version      => '~> 1.7.9',
+  node_version => '*',
 }
 npm_module { "diff-so-fancy for global node":
   module       => 'diff-so-fancy',
