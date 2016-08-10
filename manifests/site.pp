@@ -90,4 +90,10 @@ node default {
   # Documentation tools
   include dia
 
+  # Alternate programs
+  file { "${boxen::config::homebrewdir}/bin/sort":
+      ensure  => link,
+      target => "${boxen::config::homebrewdir}/bin/gsort",
+  }
+
 }
