@@ -21,6 +21,7 @@ boxen::personal::homebrew_packages:
   - gpg
   - tmate
   - shellcheck
+  - pass
 
 "nodejs::build::ensure": "v2.3.3"
 "nodejs::nodenv::ensure": "v0.2.0"
