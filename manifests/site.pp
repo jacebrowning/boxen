@@ -79,6 +79,7 @@ node default {
   # Services
   include $circleci
   include heroku
+  package { 'ngrok': provider => 'brewcask' }
 
   # Editors
   include atom
