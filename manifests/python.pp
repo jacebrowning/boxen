@@ -127,3 +127,8 @@ python::package { "awscli for $python3":
   python  => $python3,
   version => '>= 1.10.38, < 2',
 }
+python::package { "proselint for $python3":
+  package => 'proselint',
+  python  => $python3,
+  version => '>= 0.6.1, < 0.7',
+}
