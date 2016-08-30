@@ -1,10 +1,7 @@
 # Install Python versions
 $python2 = '2.7.11'
 $python3 = '3.5.0'
-python::version { '2.6.9': }
 python::version { "$python2": }
-python::version { '3.3.6': }
-python::version { '3.4.3': }
 python::version { "$python3": }
 
 # Set the global versions of Python
