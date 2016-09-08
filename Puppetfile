@@ -68,13 +68,7 @@ github "virtualbox",    "1.0.13"
 github "vagrant",       "3.3.4"
 github "heroku",        "2.0.0"
 github "postgresql",    "5.0.0", :repo => "quikly/puppet-postgresql"
-
-# TODO: update version after https://github.com/mloberg/puppet-python/pull/25
-# github "python",        "3.0.2", :repo => "mloberg/puppet-python"
-mod 'python',
-  :git => 'https://github.com/jacebrowning/puppet-python',
-  :ref => 'framework-support-on-osx'
-
+github "python",        "3.0.2", :repo => "mloberg/puppet-python"
 github "neo4j",         "1.0.0", :repo => "gjacobrobertson/puppet-neo4j"
 
 github "zsh",       "1.0.0"

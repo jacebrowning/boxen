@@ -23,10 +23,11 @@ boxen::personal::homebrew_packages:
   - shellcheck
   - pass
 
-"nodejs::build::ensure": "v2.3.3"
-"nodejs::nodenv::ensure": "v0.2.0"
+nodejs::build::ensure: v2.3.3
+nodejs::nodenv::ensure: v0.2.0
 
-"ruby::build::ensure": "v20160602"
-"ruby::rbenv::ensure": "v1.0.0"
+ruby::build::ensure: v20160602
+ruby::rbenv::ensure: v1.0.0
 
-"python::pyenv::ensure": "v20160509"
+python::pyenv::ensure: v20160726
+PYTHON_CONFIGURE_OPTS: "--with-readline-dir=%{::homebrew::config::installdir}/opt/readline --enable-framework"
