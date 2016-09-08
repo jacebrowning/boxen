@@ -5,11 +5,8 @@ python::version { "$python2": }
 python::version { "$python3": }
 
 # Set the global versions of Python
-file { "version":
-    path    => "${boxen::config::home}/pyenv/version",
-    ensure  => present,
-    replace => true,
-    content => "$python3\n\n$python2\n";
+class { 'python::global':
+  version => "$python3 $python2"
 }
 
 # Install core libraries for Python 2
