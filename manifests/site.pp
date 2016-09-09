@@ -71,6 +71,7 @@ node default {
   include $node
   include $python
   include $ruby
+  include $r
 
   # Databases
   include postgresql
