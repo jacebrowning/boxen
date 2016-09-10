@@ -114,7 +114,7 @@ python::package { "thefuck for $python3":
 python::package { "sappy for $python3":
   package => 'sappy',
   python  => $python3,
-  version => '>= 0.2.1, < 0.3',
+  version => '>= 0.2.1',
 }
 python::package { "awscli for $python3":
   package => 'awscli',
@@ -125,4 +125,9 @@ python::package { "proselint for $python3":
   package => 'proselint',
   python  => $python3,
   version => '>= 0.6.1, < 0.7',
+}
+python::package { "coverage.space for $python3":
+  package => 'coverage.space',
+  python  => $python3,
+  version => '>= 0.5',
 }
