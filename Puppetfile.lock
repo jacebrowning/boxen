@@ -1,14 +1,4 @@
 GITHUBTARBALL
-  remote: Adonit/puppet-daisy_disk
-  specs:
-    daisy_disk (1.0.2-rc.1)
-
-GITHUBTARBALL
-  remote: boxen/puppet-appcleaner
-  specs:
-    appcleaner (1.0.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-atom
   specs:
     atom (1.3.0)
@@ -129,11 +119,6 @@ GITHUBTARBALL
     sourcetree (1.0.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-spectacle
-  specs:
-    spectacle (1.0.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-sublime_text
   specs:
     sublime_text (1.0.1)
@@ -219,12 +204,10 @@ GITHUBTARBALL
     p4merge (0.0.3)
 
 DEPENDENCIES
-  appcleaner (= 1.0.0)
   atom (= 1.3.0)
   boxen (= 3.10.2)
   brewcask (= 0.0.7)
   chrome (= 1.2.0)
-  daisy_disk (= 1.0.2)
   dia (= 0.0.2)
   dnsmasq (= 2.0.1)
   firefox (= 1.2.3)
@@ -253,7 +236,6 @@ DEPENDENCIES
   repository (= 2.3.0)
   ruby (= 8.5.4)
   sourcetree (= 1.0.0)
-  spectacle (= 1.0.0)
   stdlib (= 4.2.1)
   sublime_text (= 1.0.1)
   sudo (= 1.0.0)
