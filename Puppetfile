@@ -86,7 +86,3 @@ github "dia",           "0.0.2"
 github "atom",          "1.3.0"
 
 github "xctool",    "0.0.2"
-
-github "appcleaner",    "1.0.0"
-github "daisy_disk",    "1.0.2", :repo => "Adonit/puppet-daisy_disk"
-github "spectacle",     "1.0.0"
