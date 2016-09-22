@@ -28,9 +28,9 @@ class people::jacebrowning {
   package { 'diffmerge': provider => brewcask }
 
   # Applications
-  package { 'daisy_disk': provider => 'brewcask' }
+  package { 'daisydisk': provider => 'brewcask' }
   package { 'appcleaner': provider => 'brewcask' }
-  package { 'spectacle': provider => 'brewcask' }  
+  package { 'spectacle': provider => 'brewcask' }
   package { 'skype': provider => 'brewcask' }
   package { 'macpilot': provider => 'brewcask' }
   package { 'caffeine': provider => 'brewcask' }
