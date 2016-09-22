@@ -60,26 +60,26 @@ github "sysctl",      "1.0.1"
 
 github "osx",   "1.0.0"
 
-github "nodejs",        "5.0.4"
-github "virtualbox",    "1.0.13"
-github "vagrant",       "3.3.4"
-github "heroku",        "2.0.0"
-github "postgresql",    "5.0.0", :repo => "quikly/puppet-postgresql"
-github "python",        "3.1.0", :repo => "mloberg/puppet-python"
-github "neo4j",         "1.0.0", :repo => "gjacobrobertson/puppet-neo4j"
-
 github "zsh",       "1.0.0"
 github "ohmyzsh",   "1.0.0", :repo => "erivello/puppet-ohmyzsh"
 github "iterm2",    "1.2.0"
+
+github "nodejs",        "5.0.4"
+github "python",        "3.1.0", :repo => "mloberg/puppet-python"
+
+github "heroku",        "2.0.0"
+github "postgresql",    "5.0.0", :repo => "quikly/puppet-postgresql"
+github "neo4j",         "1.0.0", :repo => "gjacobrobertson/puppet-neo4j"
+github "xctool",    "0.0.2"
+github "virtualbox",    "1.0.13"
+github "vagrant",       "3.3.4"
 
 github "chrome",            "1.2.0"
 github "firefox",           "1.2.3"
 github "github_for_mac",    "1.0.3"
 github "sourcetree",        "1.0.0"
 github "p4merge",           "0.0.3", :repo => "steinim/puppet-p4merge"
-
 github "sublime_text",  "1.0.1"
 github "dia",           "0.0.2"
 github "atom",          "1.3.0"
-
-github "xctool",    "0.0.2"
+github "spectacle",     "1.0.0"
