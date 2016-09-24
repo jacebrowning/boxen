@@ -74,6 +74,7 @@ node default {
   # Databases
   include postgresql
   include neo4j
+  package { 'elasticsearch': }
 
   # Services
   include $circleci
