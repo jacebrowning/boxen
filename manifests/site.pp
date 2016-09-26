@@ -80,6 +80,8 @@ node default {
   include $circleci
   include heroku
   package { 'ngrok': provider => 'brewcask' }
+  include virtualbox
+  include vagrant
 
   # Editors
   include atom
