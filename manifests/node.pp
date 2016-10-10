@@ -1,6 +1,7 @@
 $node_version = "6.5.0"
 
 nodejs::version { '4.2.4': }
+nodejs::version { '4.3.2': }
 nodejs::version { '5.9.1': }
 nodejs::version { '6.5.0': }
 
