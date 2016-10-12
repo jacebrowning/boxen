@@ -24,7 +24,7 @@ boxen::personal::homebrew_packages:
   - pass
 
 nodejs::build::ensure: v2.3.8
-nodejs::nodenv::ensure: v0.2.2
+nodejs::nodenv::ensure: v1.0.0
 
 ruby::build::ensure: v20160602
 ruby::rbenv::ensure: v1.0.0
