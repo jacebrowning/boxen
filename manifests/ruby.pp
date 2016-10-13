@@ -8,7 +8,7 @@ class { 'ruby::global': version => $ruby_version }
 
 ruby_gem { 'bundler for all rubies':
   gem          => 'bundler',
-  version      => '1.12.5',
+  version      => '1.13.2',
   ruby_version => '*',
 }
 ruby_gem { 'foreman for all rubies':
