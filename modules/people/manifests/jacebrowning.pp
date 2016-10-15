@@ -40,6 +40,7 @@ class people::jacebrowning {
   package { 'flowdock': provider => 'brewcask' }
   package { 'postico': provider => 'brewcask' }
   package { 'sequel-pro': provider => 'brewcask' }
+  package { 'robomongo': provider => 'brewcask' }
 
   # Projects
   file { "${boxen::config::srcdir}/boxen":
