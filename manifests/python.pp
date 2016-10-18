@@ -132,3 +132,8 @@ python::package { "coverage.space for $python3":
   python  => $python3,
   version => '>= 0.5',
 }
+python::package { "verchew for $python3":
+  package => 'verchew',
+  python  => $python3,
+  version => '>= 0.2',
+}

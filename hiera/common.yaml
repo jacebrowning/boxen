@@ -29,5 +29,5 @@ nodejs::nodenv::ensure: v1.0.0
 ruby::build::ensure: v20160602
 ruby::rbenv::ensure: v1.0.0
 
-python::pyenv::ensure: v1.0.2
+python::pyenv::ensure: eb2e5ac4c4429444fe2cd6d6696e77967ec688f9
 PYTHON_CONFIGURE_OPTS: "--with-readline-dir=%{::homebrew::config::installdir}/opt/readline --enable-framework"
