@@ -75,6 +75,7 @@ node default {
   include postgresql
   include neo4j
   package { 'elasticsearch': }
+  package { 'redis': }
   include mongodb
 
   # Services
