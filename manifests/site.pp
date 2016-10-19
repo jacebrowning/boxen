@@ -74,9 +74,12 @@ node default {
   # Databases
   include postgresql
   include neo4j
+  include mongodb
   package { 'elasticsearch': }
   package { 'redis': }
-  include mongodb
+  package { 'mysql': }
+  package { 'memcached': }
+  package { 'rabbitmq': }
 
   # Services
   include $circleci
