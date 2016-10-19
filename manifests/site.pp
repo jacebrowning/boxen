@@ -104,4 +104,7 @@ node default {
       target => "${boxen::config::homebrewdir}/bin/gsort",
   }
 
+  # Utilities
+  package { 'pv': }
+
 }
