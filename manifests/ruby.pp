@@ -1,8 +1,7 @@
 $ruby_version = '2.3.1'
 
 ruby::version { $ruby_version: }
-ruby::version { '2.2.2': }
-ruby::version { '2.2.3': }
+ruby::version { '2.2.5': }
 ruby::version { '2.3.0': }
 
 class { 'ruby::global': version => $ruby_version }
