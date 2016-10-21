@@ -69,6 +69,11 @@ python::package { "pylama for $python3":
   python  => $python3,
   version => '>= 7.0.9, < 8',
 }
+python::package { "sniffer for $python3":
+  package => 'sniffer',
+  python  => $python3,
+  version => '>= 0.3.6, < 4',
+}
 
 # Install tools written in Python 2
 python::package { "ansible for $python2":
