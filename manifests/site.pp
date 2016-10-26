@@ -64,7 +64,6 @@ node default {
   include brewcask
 
   # Programming languages
-  include $ios
   include $java
   include $node
   include $python
