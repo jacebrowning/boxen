@@ -76,22 +76,22 @@ class people::jacebrowning {
   python::package { "doorstop for $python3":
     package => 'doorstop',
     python  => $python3,
-    version => '>=1.0,<2.0',
+    version => '>= 1.0, < 2.0',
   }
   python::package { "mine for $python3":
     package => 'mine',
     python  => $python3,
-    version => '>=0.6.1,<0.7',
+    version => '>= 1.0, < 2',
   }
   python::package { "curmit for $python3":
     package => 'curmit',
     python  => $python3,
-    version => '>=1.0,<2',
+    version => '>= 1.0, < 2',
   }
   python::package { "dropthebeat for $python3":
     package => 'dropthebeat',
     python  => $python3,
-    version => '>=0.2.1,<0.3',
+    version => '>= 0.2.1, < 0.3',
   }
 
 }
